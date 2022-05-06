@@ -4,18 +4,30 @@
     @include media(1900){
         padding: 20px 0;
     }    
+    @include media(1400){
+        padding: 32px 0;
+    }
     &__nav{
         display: flex;
         align-items: center;
         justify-content: space-between;
         column-gap: 50px;
+        @include media(1400){
+            flex-direction: column;
+            row-gap: 25px;
+        }
     }
     &__logo{
+        line-height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        img{
+            width: 100%;
+        }
         @include media(1900){
             width: 120px;
-            img{
-                width: 100%;
-            }
         }
     }
     &__list{
@@ -27,6 +39,9 @@
         @include media(1900){
             column-gap: 25px;
         }
+        @include media(992){
+            flex-direction: column;
+        }
     }
     &__link{
         font-weight: 400;
@@ -34,6 +49,10 @@
         line-height: 36px;
         color: #2A303E;
         text-decoration: none;
+        transition: 300ms ease-out;
+        &:hover{
+            color: var(--secondary);
+        }
         @include media(1900){
             font-size: 18px;
         }
@@ -44,6 +63,10 @@
         line-height: 36px;
         text-decoration: none;
         color: #2A303E;   
+        transition: 300ms ease-out;
+        &:hover{
+            color: var(--secondary);
+        }
         @include media(1900){
             font-size: 18px;
         }            
