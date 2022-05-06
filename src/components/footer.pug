@@ -1,3 +1,17 @@
 mixin footer()
     footer.footer   
-        p footer
+        .footer__nav.container 
+            a(href="/index.html").footer__logo
+                img(src="@img/logo.svg", alt="" draggable="false" loading="lazy")
+            ul.footer__list 
+                li.footer__li 
+                    a(href="#!").footer__link Наша студия
+                li.footer__li 
+                    a(href="#!").footer__link Услуги и цены
+                li.footer__li 
+                    a(href="#!").footer__link Оснащение студии
+                li.footer__li 
+                    a(href="#!").footer__link Ответы на вопросы
+                li.footer__li 
+                    a(href="#!").footer__link Контакты
+            a(href="tel:+84959999999").footer__tel 8 (495) 999 99 99

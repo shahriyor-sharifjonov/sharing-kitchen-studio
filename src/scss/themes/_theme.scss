@@ -1,10 +1,14 @@
-// Тема по умолчанию
+:root{
+    --primary: #E3B983;
+    --secondary: #D83B13;
+    --bg: #F9F5F0;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     &:focus,
     &:active{
         outline: none;
@@ -13,6 +17,9 @@
 html,
 body{
     height: 100%;
+}
+body.o-hidden{
+    overflow-y: hidden;
 }
 .wrapper{
     min-height: 100%;
@@ -26,4 +33,16 @@ button{
     background: none;
     border: none;
     cursor: pointer;
+}
+.title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #2A303E;    
+    span{
+        color: var(--primary);
+    }
+}
+ul{
+    list-style-type: none;
 }

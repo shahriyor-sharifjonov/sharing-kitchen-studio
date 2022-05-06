@@ -6,7 +6,9 @@ $lg: 992;
 $md: 768;
 $sm: 576;
 
-$sizes: (1320:$xxl,
+$sizes: (
+    1856:1900,
+    1320:$xxl,
     1140:$xl,
     960:$lg,
     720:$md,
@@ -30,7 +32,7 @@ $break-point in $sizes {
     @else {
         @media(min-width:#{$break-point}px) {
             .container {
-                max-width: #{$container-size}px;
+                max-width: #{$container-size}px; 
             }
         }
     }

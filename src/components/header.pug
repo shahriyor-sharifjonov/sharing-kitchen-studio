@@ -1,3 +1,73 @@
 mixin header()
-    header.header 
-        p header
+    header.header   
+        .header__nav.container 
+            a(href="/index.html").header__logo
+                img(src="@img/logo.svg", alt="" draggable="false" loading="lazy")
+            ul.header__list 
+                li.header__li 
+                    a(href="#!").header__link Наша студия
+                li.header__li.header__dropdown 
+                    button(type="button").header__link.header__dropdown-button Услуги и цены
+                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.753 10.6665L16.873 16.7732L22.993 10.6665L24.873 12.5465L16.873 20.5465L8.87305 12.5465L10.753 10.6665Z" fill="black" fill-opacity="0.87"/>
+                        </svg>
+                    .header__dropdown-content 
+                        ul.header__dropdown-list  
+                            li.header__dropdown-li 
+                                a(href="#!").header__dropdown-link Видео-рецепты 
+                            li.header__dropdown-li 
+                                a(href="#!").header__dropdown-link Онлайн курс/видео-лекция
+                            li.header__dropdown-li 
+                                a(href="#!").header__dropdown-link Видео-обзоры
+                            li.header__dropdown-li 
+                                a(href="#!").header__dropdown-link Предметная съемка
+                            li.header__dropdown-li 
+                                a(href="#!").header__dropdown-link Вебинары/трансляции
+                li.header__li 
+                    a(href="#!").header__link Оснащение студии
+                li.header__li 
+                    a(href="#!").header__link Ответы на вопросы
+                li.header__li 
+                    a(href="#!").header__link Контакты
+            a(href="tel:+84959999999").header__tel 8 (495) 999 99 99
+            button.header__button 
+              span.header__button-line
+        .header__menu
+            ul.header__menu-body 
+                li.header__menu-li
+                    a(href="#!").header__menu-link.container Наша студия
+                li.header__menu-li.header__menu-dropdown
+                    button(type="button").header__menu-link.container.header__menu-dropdown-button 
+                        .header__menu-dropdown-button-inner
+                            | Услуги и цены
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3331 8L11.4531 9.88L17.5598 16L11.4531 22.12L13.3331 24L21.3331 16L13.3331 8Z" fill="#2A303E"/>
+                            </svg>
+                    ul.header__menu-dropdown-content 
+                        li.header__menu-dropdown-back.container 
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.547 9.88L18.667 8L10.667 16L18.667 24L20.547 22.12L14.4403 16L20.547 9.88Z" fill="#2A303E"/>
+                            </svg>
+                            | Услуги и цены
+                        li.header__menu-li
+                            a(href="#!").header__menu-link.container Видео-рецепты
+                        li.header__menu-li
+                            a(href="#!").header__menu-link.container Онлайн курс/видео-лекция
+                        li.header__menu-li
+                            a(href="#!").header__menu-link.container Видео-обзоры
+                        li.header__menu-li
+                            a(href="#!").header__menu-link.container Предметная съемка
+                        li.header__menu-li
+                            a(href="#!").header__menu-link.container Вебинары/трансляции
+                li.header__menu-li
+                    a(href="#!").header__menu-link.container Оснащение студии
+                li.header__menu-li
+                    a(href="#!").header__menu-link.container Вопросы и ответы
+                li.header__menu-li
+                    a(href="#!").header__menu-link.container Контакты
+                a(href="tel:+84959999999").header__menu-tel 
+                    .header__menu-tel-container.container
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.2002 7.20019C1.2002 2.8588 3.81793 1.46236 5.50196 1.23515C5.81389 1.19307 6.11134 1.34839 6.3002 1.6002L9.07982 5.30636C9.37841 5.70448 9.33882 6.26157 8.98692 6.61347L6.50985 9.09054C6.20549 9.3949 6.13197 9.85914 6.35138 10.2294C6.86686 11.0994 7.9498 12.7498 9.60019 14.4002C11.2506 16.0506 12.901 17.1335 13.7709 17.649C14.1412 17.8684 14.6055 17.7949 14.9098 17.4905L17.3869 15.0135C17.7388 14.6616 18.2959 14.622 18.694 14.9206L22.4002 17.7002C22.652 17.889 22.8073 18.1865 22.7652 18.4984C22.538 20.1825 21.1416 22.8002 16.8002 22.8002C12.0002 22.8002 8.4002 19.2002 6.60019 17.4002C4.8002 15.6002 1.2002 12.0002 1.2002 7.20019Z" fill="black"/>
+                        </svg>
+                        | 8 (495) 999 99 99 
