@@ -610,6 +610,13 @@
 
 .location .swiper-slide {
   line-height: 0;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.location .swiper-slide:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
 
 .location .swiper-slide img {
@@ -676,6 +683,7 @@
 
 .location__prev.swiper-button-disabled {
   opacity: 0.7;
+  cursor: auto;
 }
 
 .location__prev::before {
@@ -696,6 +704,7 @@
 
 .location__next.swiper-button-disabled {
   opacity: 0.7;
+  cursor: auto;
 }
 
 .location__next::before {
@@ -997,10 +1006,6 @@ a {
     font-size: 18px;
   }
 
-  .location {
-    padding: 70px 0;
-  }
-
   .location__row {
     -webkit-column-gap: 25px;
        -moz-column-gap: 25px;
@@ -1067,10 +1072,6 @@ a {
     row-gap: 30px;
   }
 
-  .location {
-    padding: 50px 0;
-  }
-
   .location__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1085,11 +1086,6 @@ a {
   .location__slider {
     max-width: 100%;
     width: 100%;
-  }
-
-  .title {
-    margin-bottom: 25px;
-    font-size: 32px;
   }
 }
 
@@ -1110,6 +1106,11 @@ a {
 
   .header__menu {
     top: 70px;
+  }
+
+  .title {
+    margin-bottom: 25px;
+    font-size: 32px;
   }
 
   .no-webp .hero::before {
@@ -1142,6 +1143,10 @@ a {
 
   .intro__btn {
     width: 100%;
+  }
+
+  .location {
+    padding: 50px 0;
   }
 
   .location__li {
