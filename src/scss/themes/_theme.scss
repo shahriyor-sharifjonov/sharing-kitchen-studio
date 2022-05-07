@@ -46,3 +46,35 @@ button{
 ul{
     list-style-type: none;
 }
+a{
+    text-decoration: none;
+}
+.btn{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background: var(--secondary);
+    padding: 12px 100px;
+    border-radius: 92px;
+    transition: 300ms ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    @include media(1400){
+        font-size: 20px;
+    }
+    @include media(576){
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 17px 70px;
+    }
+    &:hover{
+        background: #F06643;
+    }
+    &.disabled{
+        background: #E0E0E0 !important;
+    }
+}
