@@ -2,9 +2,9 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
-// import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
 
-// const swiper = new Swiper();
+const swiper = new Swiper();
 
 const headerButton = document.querySelector(".header__button");
 const headerMenu = document.querySelector(".header__menu");
@@ -40,3 +40,13 @@ menuDropBek.addEventListener('click', e => {
     menuDropBtn.classList.remove('active');
     menuDropCon.classList.remove('active');
 })
+
+new Swiper(".location__swiper", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  modules: [Navigation],
+  navigation: {
+    prevEl: ".location__prev",
+    nextEl: ".location__next",
+  },
+});
