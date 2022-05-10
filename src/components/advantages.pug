@@ -1,8 +1,24 @@
-mixin advantages-title('')
+mixin advantages-item(img, title, desc)
+    .advantages__item.swiper-slide
+        .advantages__item-img
+            img(src=`img/advantages-${img}.svg`, alt="" draggable="false" loading="lazy")
+        p.advantages__item-title #{title}
+        p.advantages__item-p #{desc}
+
+
 
 mixin advantages()
     section.section.advantages
-        .section__header 
-            h2.title.advantages__title К нам #[span стоит прийти] 
-            p.section__desc.advantages__desc Несколько важных преимуществ, которые помогут вам выбрать нашу студию для реализации своих проектов
-        
+        .advantages__body.container
+            .section__header 
+                h2.title.advantages__title К нам #[span стоит прийти] 
+                p.section__desc.advantages__desc Несколько важных преимуществ, которые помогут вам выбрать нашу студию для реализации своих проектов
+            .advantages__slider 
+                .advantages__swiper.swiper 
+                    .advantages__wrapper.swiper-wrapper 
+                        +advantages-item('1', 'Максимум удобства', 'Студия находится в одном здании с Sharing Kitchen - самой большой коммерческой кухней Москвы! Готовьте и тут же снимайте ваш food-контент!')
+                        +advantages-item('2', 'Расположение', 'Удобное расположение в центре г. Москва, недалеко от м. Крестьянская застава и м. Площадь Ильича')
+                        +advantages-item('3', 'Оснащение студии', 'Для вашего удобства студия оснащена премиальным food-оборудованием')
+                        +advantages-item('4', 'Премиум фото и видео техника', 'Мы используем для съемки только технику люкс и премиум сегментов. К вашим услугам камеры Black Magick 6K.')
+                        +advantages-item('4', 'Идеальные условия для съемки', 'Помещение на этапе проекта готовили под студию. Потому - в нем выполнена качественная подготовка и шумоизоляция')
+                .swiper-pagination.advantages__pagination  

@@ -50,3 +50,28 @@ new Swiper(".location__swiper", {
     nextEl: ".location__next",
   },
 });
+new Swiper(".advantages__swiper", {
+  slidesPerView: 1,
+  spaceBetween: 22,
+  watchSlidesProgress: true,
+  slideVisibleClass: 'visible',
+  modules: [Pagination],
+  pagination: {
+    el: '.advantages__pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    1900: {
+      slidesPerView: 5,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 2,
+    }
+  }
+});
