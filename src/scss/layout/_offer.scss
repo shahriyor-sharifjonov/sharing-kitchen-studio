@@ -28,6 +28,9 @@
         }
         img{
             max-width: 100%;
+            @include media(992){
+                margin-left: -17px;
+            }
         }
     }
 }

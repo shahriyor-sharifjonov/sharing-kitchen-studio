@@ -1,0 +1,31 @@
+mixin clients-item(img, title)
+    .clients__item.swiper-slide 
+        .clients__item-img
+            img(src=`img/clients-${img}.png`, alt="" draggable="false" loading="lazy")
+        p.clients__item-title #{title}
+
+
+
+mixin clients()
+    section.section.clients 
+        .clients__body.container 
+            h2.title.clients__title Наши #[span клиенты]
+            .clients__slider 
+                .clients__swiper.swiper 
+                    .clients__wrapper.swiper-wrapper 
+                        +clients-item('1', 'Julius Meinl')
+                        +clients-item('2', 'Высший молочный стандарт')
+                        +clients-item('3', 'Чайхона номер один')
+                        +clients-item('4', 'NeoFit')
+                        +clients-item('5', 'Черкизовский завод')
+                        +clients-item('1', 'Julius Meinl')
+                        +clients-item('2', 'Высший молочный стандарт')
+                        +clients-item('3', 'Чайхона номер один')
+                        +clients-item('4', 'NeoFit')
+                        +clients-item('5', 'Черкизовский завод')
+                .clients__action 
+                    .clients__action-prev.swiper-button-prev
+                        img(src="@img/prev.svg", alt="" draggable="false" loading="lazy")
+                    .clients__action-next.swiper-button-next
+                        img(src="@img/next.svg", alt="" draggable="false" loading="lazy")
+                .clients__pagination.swiper-pagination 

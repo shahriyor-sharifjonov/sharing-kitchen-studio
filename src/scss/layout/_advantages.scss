@@ -62,31 +62,4 @@
             }
         }
     }
-    .swiper{
-        &-pagination{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            &-lock{
-                display: none;
-            }
-            &-bullet{
-                background: #333333;
-                opacity: 0.3;
-                width: 8px;
-                height: 8px;
-                border-radius: 50%;
-                transition: 300ms ease-out;
-                border: 1px solid transparent;
-                cursor: pointer;
-                margin-top:24px;
-                &-active{
-                    background: #FFFFFF;
-                    opacity: 0.5;
-                    border: 1px solid #333333;
-                }
-            }
-        }
-    }
 }

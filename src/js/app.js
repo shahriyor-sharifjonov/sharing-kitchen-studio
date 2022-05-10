@@ -2,7 +2,7 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Grid, Navigation, Pagination } from 'swiper';
 
 const swiper = new Swiper();
 
@@ -33,12 +33,12 @@ const menuDropBtn = document.querySelector('.header__menu-dropdown-button');
 const menuDropCon = document.querySelector('.header__menu-dropdown-content');
 const menuDropBek = document.querySelector('.header__menu-dropdown-back');
 menuDropBtn.addEventListener('click', e => {
-    menuDropBtn.classList.add('active');
-    menuDropCon.classList.add('active');
+  menuDropBtn.classList.add('active');
+  menuDropCon.classList.add('active');
 })
 menuDropBek.addEventListener('click', e => {
-    menuDropBtn.classList.remove('active');
-    menuDropCon.classList.remove('active');
+  menuDropBtn.classList.remove('active');
+  menuDropCon.classList.remove('active');
 })
 
 new Swiper(".location__swiper", {
@@ -50,6 +50,7 @@ new Swiper(".location__swiper", {
     nextEl: ".location__next",
   },
 });
+
 new Swiper(".advantages__swiper", {
   slidesPerView: 1,
   spaceBetween: 22,
@@ -73,5 +74,53 @@ new Swiper(".advantages__swiper", {
     768: {
       slidesPerView: 2,
     }
+  }
+});
+
+new Swiper(".clients__swiper", {
+  slidesPerView: 2,
+  spaceBetween: 40,
+  modules: [Pagination, Navigation, Grid],
+  grid: {
+    rows: 2,
+    fill: 'column',
+  },
+  pagination: {
+    el: ".clients__pagination",
+    clickable: true,
+  },
+  navigation:{
+    nextEl: '.clients__action-next',
+    prevEl: '.clients__action-prev',
+  },
+  breakpoints: {
+    1900: {
+      slidesPerView: 5,
+      grid: {
+        rows: 1,
+        fill: 'row'
+      },
+    },
+    1400: {
+      slidesPerView: 4,
+      grid: {
+        rows: 1,
+        fill: 'row'
+      },
+    },
+    992: {
+      slidesPerView: 3,
+      grid: {
+        rows: 1,
+        fill: 'row'
+      },
+    },
+    768: { 
+      slidesPerView: 2,
+      grid: {
+        rows: 1,
+        fill: 'row'
+      },
+    },
   }
 });
