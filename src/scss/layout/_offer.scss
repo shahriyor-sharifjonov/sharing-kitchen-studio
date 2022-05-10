@@ -1,0 +1,33 @@
+.offer{
+    padding: 200px 0;
+    @include media(1900){
+        padding: 100px 0;
+    }
+    @include media(576){
+        padding: 50px 0;
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media(992){
+            flex-direction: column-reverse;
+        }
+    }
+    &__title{
+        max-width: 770px;
+        margin-bottom: 62px;
+        @include media(1200){
+            font-size: 35px;
+        }
+    }
+    &__img{
+        max-width: 50%;
+        @include media(992){
+            max-width: 100%;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+}
