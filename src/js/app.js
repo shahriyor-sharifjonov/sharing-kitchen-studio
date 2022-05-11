@@ -124,3 +124,20 @@ new Swiper(".clients__swiper", {
     },
   }
 });
+
+new Swiper(".works__swiper", {
+  slidesPerView: 1,
+  spaceBetween: 22,
+  watchSlidesProgress: true,
+  slideVisibleClass: 'visible',
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.works__next',
+    prevEl: '.works__prev'
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    }
+  }
+});

@@ -1,0 +1,38 @@
+mixin works-item(img, title, desc)
+    .works__item.swiper-slide 
+        .works__item-img
+            img(src=`img/work-${img}.png`, alt="" draggable="false" loading="lazy")
+            a(href="#!").works__item-play 
+                <svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="42.2607" cy="42.5934" r="41.9824" fill="white"/>
+                    <path d="M58.7538 40.7461C60.753 41.9003 60.753 44.7859 58.7538 45.9401L37.3878 58.2758C35.3886 59.43 32.8897 57.9872 32.8897 55.6788L32.8897 31.0074C32.8897 28.699 35.3886 27.2562 37.3878 28.4104L58.7538 40.7461Z" fill="#E3B983"/>
+                </svg>
+        p.works__item-title #{title}
+        p.works__item-p #{desc}
+
+
+mixin works() 
+    section.section.works 
+        .works__body.container 
+            h2.title.works__title Наши #[span работы] 
+            p.section__desc.works__desc Посмотрите прямо здесь и сейчас 
+            .works__slider 
+                .works__action 
+                    .works__prev.swiper-button-prev 
+                        <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1.20769" y="0.86254" width="70.4705" height="70.4705" rx="35.2352" fill="white"/>
+                        <path d="M43.2601 26.9217L40.4413 24.1028L28.4463 36.0978L40.4413 48.0928L43.2601 45.274L34.1039 36.0978L43.2601 26.9217Z" fill="#2A303E"/>
+                        <rect x="1.20769" y="0.86254" width="70.4705" height="70.4705" rx="35.2352" stroke="#ECEAE3" stroke-width="1.49937"/>
+                        </svg> 
+                    .works__next.swiper-button-next 
+                        <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1.00066" y="0.86254" width="70.4705" height="70.4705" rx="35.2352" fill="white"/>
+                        <path d="M32.2376 24.1028L29.4188 26.9217L38.575 36.0978L29.4188 45.274L32.2376 48.0928L44.2326 36.0978L32.2376 24.1028Z" fill="#2A303E"/>
+                        <rect x="1.00066" y="0.86254" width="70.4705" height="70.4705" rx="35.2352" stroke="#ECEAE3" stroke-width="1.49937"/>
+                        </svg> 
+                .works__swiper.swiper 
+                    .works__wrapper.swiper-wrapper 
+                        +works-item('1', 'SandWichBar', 'Реклама для ресторана') 
+                        +works-item('2', 'HYPERPC AMPERE - самый премиальный и мощный ПК!', 'Съемка процесса сборки') 
+                        +works-item('1', 'SandWichBar', 'Реклама для ресторана') 
+                        +works-item('2', 'HYPERPC AMPERE - самый премиальный и мощный ПК!', 'Съемка процесса сборки') 
