@@ -1,0 +1,18 @@
+mixin services-item(img, title)
+    a(href="#!").services__item
+        .services__item-img 
+            img(src=`img/service-${img}.png`, alt="" draggable="false")
+        p.services__item-title #{title}
+
+
+
+mixin services-intro()
+    section.section.services.hero 
+        .services__body.container 
+            h2.title.services__title Наши услуги
+            .services__content 
+                +services-item(1, 'Видео-рецепты')
+                +services-item(2, 'Онлайн курс/видео-лекция')
+                +services-item(3, 'Видео-обзоры')
+                +services-item(4, 'Предметная съемка')
+                +services-item(5, 'Вебинары/трансляции')
