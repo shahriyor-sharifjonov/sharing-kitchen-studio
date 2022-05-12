@@ -49,13 +49,13 @@
     }
     &__link{
         font-weight: 400;
-        font-size: 24px;
+        font-size: 22px;
         line-height: 36px;
         color: #2A303E;
         text-decoration: none;
         transition: 300ms ease-out;
         &:hover{
-            &:not(.header__dropdown-button){
+            &:not(.header__dropdown-button){ 
                 color: var(--secondary);
             }
         }
