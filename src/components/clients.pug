@@ -1,7 +1,7 @@
 mixin clients-item(img, title)
     .clients__item.swiper-slide 
         .clients__item-img
-            img(src=`img/clients-${img}.png`, alt="" draggable="false" loading="lazy")
+            img(src=`img/clients-${img}.png`, alt="" draggable="false")
         p.clients__item-title #{title}
 
 
@@ -25,7 +25,7 @@ mixin clients()
                         +clients-item('5', 'Черкизовский завод')
                 .clients__action 
                     .clients__action-prev.swiper-button-prev
-                        img(src="@img/prev.svg", alt="" draggable="false" loading="lazy")
+                        img(src="@img/prev.svg", alt="" draggable="false")
                     .clients__action-next.swiper-button-next
-                        img(src="@img/next.svg", alt="" draggable="false" loading="lazy")
+                        img(src="@img/next.svg", alt="" draggable="false")
                 .clients__pagination.swiper-pagination 

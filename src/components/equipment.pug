@@ -1,0 +1,30 @@
+mixin equipment-li(p)
+    li.equipment__item-li
+        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.383545" y="0.270508" width="23.9899" height="23.9899" rx="11.995" fill="#31AD72"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4291 7.26044L11.2105 16.7434L5.95703 11.49L6.8052 10.6418L11.1477 14.9843L18.5226 6.47485L19.4291 7.26044Z" fill="white"/>
+        </svg>
+        | #{p}
+mixin equipment()
+    section.section.equipment
+        .equipment__body.container
+            h2.title.equipment__title #[span Оснащение] студии
+            .equipment__content
+                .equipment__item
+                    p.equipment__item-title Food-техника
+                    .equipment__item-img
+                        img(src="@img/equipment-1.png", alt="" draggable="false")
+                    ul.equipment__list 
+                        +equipment-li('Удобная кухонная мебель, кухонный островок')
+                        +equipment-li('Профессиональная варочная панель')
+                        +equipment-li('Несколько удобных локаций внутри студии для съемок любого видеоконтента')
+                .equipment__item
+                    p.equipment__item-title Видео- и аудио-техника
+                    .equipment__item-img
+                        img(src="@img/equipment-2.png", alt="" draggable="false")
+                    ul.equipment__list 
+                        +equipment-li('Камеры Blackmagic Pocket Cinema Camera 6K, а также камеры Sony a7c, Sony 6400')
+                        +equipment-li('Объективы SIGMA 50-100mm f1.8 и SIGMA 18-35mm f1.8')
+                        +equipment-li('Стабилизатор DJI RS2')
+                        +equipment-li('Студийный свет Apture и Godox')
+                        +equipment-li('Профессиональные микрофоны Shure SM7B и петлички Rode')
