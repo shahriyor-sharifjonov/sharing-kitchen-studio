@@ -1423,7 +1423,11 @@ input[type=checkbox]::before {
 }
 
 .quests {
-  padding: 200px 0;
+  padding: 100px 0;
+}
+
+.quests__title {
+  text-align: center;
 }
 
 .bid {
@@ -1783,10 +1787,6 @@ input[type=checkbox]::before {
   }
 
   .equipment {
-    padding: 100px 0;
-  }
-
-  .quests {
     padding: 100px 0;
   }
 }

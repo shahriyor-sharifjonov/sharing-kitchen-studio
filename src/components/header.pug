@@ -7,7 +7,7 @@ mixin header()
                 li.header__li 
                     a(href="#!").header__link Наша студия
                 li.header__li.header__dropdown 
-                    button(type="button").header__link.header__dropdown-button Услуги и цены
+                    a(href="services.html").header__link.header__dropdown-button Услуги и цены
                         <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.753 10.6665L16.873 16.7732L22.993 10.6665L24.873 12.5465L16.873 20.5465L8.87305 12.5465L10.753 10.6665Z" fill="black" fill-opacity="0.87"/>
                         </svg>
@@ -26,7 +26,7 @@ mixin header()
                 li.header__li 
                     a(href="#!").header__link Оснащение студии
                 li.header__li 
-                    a(href="#!").header__link Ответы на вопросы
+                    a(href="questions.html").header__link Ответы на вопросы
                 li.header__li 
                     a(href="#!").header__link Контакты
             a(href="tel:+84959999999").header__tel 8 (495) 999 99 99
@@ -37,7 +37,7 @@ mixin header()
                 li.header__menu-li
                     a(href="#!").header__menu-link.container Наша студия
                 li.header__menu-li.header__menu-dropdown
-                    button(type="button").header__menu-link.container.header__menu-dropdown-button 
+                    a(href="services.html").header__menu-link.container.header__menu-dropdown-button 
                         .header__menu-dropdown-button-inner
                             | Услуги и цены
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +62,7 @@ mixin header()
                 li.header__menu-li
                     a(href="#!").header__menu-link.container Оснащение студии
                 li.header__menu-li
-                    a(href="#!").header__menu-link.container Вопросы и ответы
+                    a(href="questions.html").header__menu-link.container Вопросы и ответы
                 li.header__menu-li
                     a(href="#!").header__menu-link.container Контакты
                 a(href="tel:+84959999999").header__menu-tel 
