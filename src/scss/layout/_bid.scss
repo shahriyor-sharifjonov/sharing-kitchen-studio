@@ -6,11 +6,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    scroll-margin: 100px;                                                   
+    scroll-margin: 200px;   
+    @include media(1900){
+        scroll-margin: 100px;
+    }                                                
     @include media(576){
         margin-bottom: 40px;
         border-radius: 32px;
         padding: 32px 16px;
+        scroll-margin: 50px;
     }
     &__form{
         max-width: 600px;
