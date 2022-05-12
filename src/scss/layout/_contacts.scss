@@ -8,6 +8,11 @@
         justify-content: space-between;
         align-items: center;
         column-gap: 30px;
+        @include media(992){
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            row-gap: 16px;
+        }
     }
     &__title{
         margin-bottom: 20px;
@@ -17,6 +22,17 @@
         @include media(1400){
             margin-bottom: 20px;
         }
+        &.desktop{
+            @include media(992){
+                display: none;
+            }
+        }
+        &.mobile{
+            display: none;
+            @include media(992){
+                display: block;
+            }
+        }
     }
     &__p{
         font-weight: 700;
@@ -25,19 +41,74 @@
         color: #333333;
         margin-bottom: 40px;
         max-width: 641px;
+        @include media(576){
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 24px;
+        }
+    }
+    &__item{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: #333333;
+        column-gap: 8px;
+        @include media(576){
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &:not(:last-of-type){
+            margin-bottom: 16px;
+        }
+        &:last-of-type{
+            margin-bottom: 48px;
+            @include media(576){
+                margin-bottom: 32px;
+            }
+        }
+        svg{
+            margin-top: 2px;
+        }
+    }
+    &__btn{
+        @include media(576){
+            max-width: 100%;
+            width: 100%;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 16px 20px;
+            text-align: center;
+        }
     }
     &__map{
         box-shadow: 0px 0px 44px -4px rgba(149, 111, 57, 0.14);
         border-radius: 24px;
         overflow: hidden;
         line-height: 0;
+        position: relative;
+        padding-bottom: 56.25%;
         width: 50%;
+        @include media(992){
+            width: 100%;
+        }
+        &>div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
         *{
             line-height: 0;
         }
         iframe{
             border: none;
             width: 100%;
+            height: 100%;
         }
     }
 }

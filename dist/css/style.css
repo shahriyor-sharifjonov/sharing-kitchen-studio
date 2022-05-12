@@ -1631,6 +1631,10 @@ input[type=checkbox]::before {
   margin-bottom: 20px;
 }
 
+.contacts__title.mobile {
+  display: none;
+}
+
 .contacts__p {
   font-weight: 700;
   font-size: 24px;
@@ -1640,13 +1644,55 @@ input[type=checkbox]::before {
   max-width: 641px;
 }
 
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+
+.contacts__item:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.contacts__item:last-of-type {
+  margin-bottom: 48px;
+}
+
+.contacts__item svg {
+  margin-top: 2px;
+}
+
 .contacts__map {
   -webkit-box-shadow: 0px 0px 44px -4px rgba(149, 111, 57, 0.14);
           box-shadow: 0px 0px 44px -4px rgba(149, 111, 57, 0.14);
   border-radius: 24px;
   overflow: hidden;
   line-height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
   width: 50%;
+}
+
+.contacts__map > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .contacts__map * {
@@ -1656,6 +1702,7 @@ input[type=checkbox]::before {
 .contacts__map iframe {
   border: none;
   width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 576px) {
@@ -2122,6 +2169,29 @@ input[type=checkbox]::before {
             flex-direction: column;
     row-gap: 16px;
   }
+
+  .contacts__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    row-gap: 16px;
+  }
+
+  .contacts__title.desktop {
+    display: none;
+  }
+
+  .contacts__title.mobile {
+    display: block;
+  }
+
+  .contacts__map {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2379,6 +2449,30 @@ input[type=checkbox]::before {
 
   .contacts {
     padding: 50px 0;
+  }
+
+  .contacts__p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  .contacts__item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .contacts__item:last-of-type {
+    margin-bottom: 32px;
+  }
+
+  .contacts__btn {
+    max-width: 100%;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 20px;
+    text-align: center;
   }
 }
 
