@@ -245,6 +245,71 @@ a {
   border: 1px solid #333333;
 }
 
+.accordion:last-child .accordion__button {
+  border-bottom: 1.5px solid #ECEAE3;
+}
+
+.accordion__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+  padding: 24px 0;
+  text-align: left;
+  width: 100%;
+  border-top: 1.5px solid #ECEAE3;
+  border-bottom: 1.5px solid transparent;
+  -webkit-transition: border 300ms ease;
+  -o-transition: border 300ms ease;
+  transition: border 300ms ease;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  color: #2A303E;
+}
+
+.accordion__button.active {
+  border-bottom: 1.5px solid #ECEAE3;
+  -webkit-transition: border 0ms ease;
+  -o-transition: border 0ms ease;
+  transition: border 0ms ease;
+}
+
+.accordion__button.active svg {
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.accordion__button svg {
+  width: 70px;
+  min-width: 70px;
+  height: 70px;
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.accordion__content {
+  display: none;
+  padding: 35px 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2A303E;
+}
+
 .header {
   height: 100px;
   display: -webkit-box;
@@ -1304,6 +1369,10 @@ a {
   margin-top: 7.5px;
 }
 
+.quests {
+  padding: 200px 0;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -1483,6 +1552,10 @@ a {
   }
 
   .equipment {
+    padding: 100px 0;
+  }
+
+  .quests {
     padding: 100px 0;
   }
 }
@@ -1689,6 +1762,24 @@ a {
 }
 
 @media (max-width: 992px) {
+  .accordion__button {
+    font-size: 24px;
+    line-height: 32px;
+    padding: 16px 0;
+  }
+
+  .accordion__button svg {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+  }
+
+  .accordion__content {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 0;
+  }
+
   .footer__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1948,6 +2039,10 @@ a {
 
   .equipment__item {
     padding: 24px;
+  }
+
+  .quests {
+    padding: 50px 0;
   }
 }
 

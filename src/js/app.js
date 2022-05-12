@@ -1,8 +1,8 @@
 import * as functions from "./modules/functions.js";
+import Swiper, { Grid, Navigation, Pagination } from 'swiper';
+import $ from 'jquery';
 
 functions.isWebp();
-
-import Swiper, { Grid, Navigation, Pagination } from 'swiper';
 
 const swiper = new Swiper();
 
@@ -40,6 +40,24 @@ menuDropBek.addEventListener('click', e => {
   menuDropBtn.classList.remove('active');
   menuDropCon.classList.remove('active');
 })
+
+$(document).ready(function() {
+  $(".accordion > .accordion__button").on("click", function() {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this)
+        .siblings(".accordion__content")
+        .slideUp(300);
+    } else {
+      $(".accordion > .accordion__button").removeClass("active");
+      $(this).addClass("active");
+      $(".accordion__content").slideUp(300);
+      $(this)
+        .siblings(".accordion__content")
+        .slideDown(300);
+    }
+  });
+});
 
 new Swiper(".location__swiper", {
   slidesPerView: 1,
