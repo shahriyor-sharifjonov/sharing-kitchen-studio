@@ -209,3 +209,22 @@ document.querySelectorAll('.bron__content').forEach(el=>{
     time.innerHTML = `${checkedInputs.length} час`
   }
 })
+
+if(document.querySelector('.how')){
+  const buttons = document.querySelectorAll('.how__sidebar-item');
+  const content = document.querySelectorAll('.how__item');
+  buttons.forEach(button => {
+    button.addEventListener('click', e => {
+      const dataTarget = button.getAttribute('data-target');
+      const target = document.querySelector(`#${dataTarget}`);
+      buttons.forEach(el => {
+        el.classList.remove('active');
+      })
+      content.forEach(el => {
+        el.classList.remove('active');
+      })
+      button.classList.add('active');
+      target.classList.add('active');
+    })
+  })
+}
