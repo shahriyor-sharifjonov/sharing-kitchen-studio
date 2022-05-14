@@ -22,3 +22,53 @@ mixin location()
                         li.location__li #[img(src="@img/location-icon-3.svg", alt="" draggable="false")] Площадь 60 м2
                         li.location__li #[img(src="@img/location-icon-4.svg", alt="" draggable="false")] Несколько зон для съемки разных форматов food-контента
                     a(href="#!").location__btn.btn Подробнее 
+                    
+mixin location-2()
+    section.section.location
+        .location__body.container
+            .location__row.fdcr 
+                .location__content 
+                    h2.title.location__title Food-#[span техника]
+                    ul.info__list 
+                        li.info__p Удобная кухонная мебель, кухонный островок
+                        li.info__p Профессиональная варочная панель
+                        li.info__p Профессиональная кухонная утварь
+                        li.info__p Несколько удобных локаций внутри студии для съемок любого видеоконтента
+                    a(href="#!").location__btn.btn Забронировать студию
+                .location__slider 
+                    .location__swiper.swiper 
+                        .location__swiper-wrapper.swiper-wrapper 
+                            .location__slide.swiper-slide 
+                                img(src="@img/location-img-1.png", alt="" draggable="false")
+                            .location__slide.swiper-slide 
+                                img(src="@img/location-img-1.png", alt="" draggable="false")
+                            .location__slide.swiper-slide 
+                                img(src="@img/location-img-1.png", alt="" draggable="false")
+                    .location__buttons 
+                        .location__prev
+                        .location__next
+mixin location-3()
+    section.section.location.bg 
+        .location__body.container
+            .location__row 
+                .location__slider 
+                    .location__swiper.swiper 
+                        .location__swiper-wrapper.swiper-wrapper 
+                            .location__slide.swiper-slide 
+                                img(src="@img/location-img-1.png", alt="" draggable="false")
+                            .location__slide.swiper-slide 
+                                img(src="@img/location-img-1.png", alt="" draggable="false")
+                            .location__slide.swiper-slide 
+                                img(src="@img/location-img-1.png", alt="" draggable="false")
+                    .location__buttons 
+                        .location__prev
+                        .location__next
+                .location__content 
+                    h2.title.location__title Видео, аудио #[span техника и свет]
+                    ul.info__list 
+                        li.info__p Камеры BLACKMAGIC POCKET CINEMA CAMERA 6K
+                        li.info__p Объективы SIGMA 50-100mm f1.8 и SIGMA 18-35mm f1.8
+                        li.info__p Стабилизатор DJI RS2
+                        li.info__p Студийный свет Aputure и Godox
+                        li.info__p Профессиональные микрофоны Shure SM7B и петлички Rode
+                    a(href="#!").location__btn.btn Забронировать студию
