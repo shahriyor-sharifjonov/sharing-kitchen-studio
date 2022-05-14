@@ -89,6 +89,39 @@
             margin-bottom: 16px;
         }
     }
+    &__txt{
+        font-weight: 400;
+        font-size: 24px;
+        margin-bottom: 32px;
+        line-height: 36px;
+        color: #2A303E;
+        @include media(576){
+            margin-bottom: 16px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    &__titem{
+        &:not(:last-of-type){
+            margin-bottom: 32px;
+        }
+        &:last-of-type{
+            margin-bottom: 64px;
+        }
+        &-title{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 8px;
+            color: #2A303E;
+        }
+        &-p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #2A303E;
+        }
+    }
     &__p{
         font-weight: 400;
         font-size: 24px;

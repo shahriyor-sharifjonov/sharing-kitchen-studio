@@ -1,4 +1,4 @@
-mixin info-slider()
+mixin info-studio-slider()
     .info__swiper.swiper.info__swiper_2
         .info__wrapper.swiper-wrapper 
             .info__item.swiper-slide
@@ -27,7 +27,7 @@ mixin info-slider()
                     <path d="M18.0007 14.0027L16.5913 15.4121L21.1694 20.0002L16.5913 24.5882L18.0007 25.9977L23.9982 20.0002L18.0007 14.0027Z" fill="#2A303E"/>
                 </svg>
 
-mixin info-thumbs()
+mixin info-studio-thumbs()
     .info__swiper.swiper.info__swiper_1(thumbsSlider="")
         .info__wrapper.swiper-wrapper 
             .info__item.swiper-slide
@@ -51,8 +51,8 @@ mixin info-studio()
             h1.info__title.title Наша студия
             .info__content 
                 .info__slider 
-                    +info-slider()
-                    +info-thumbs()
+                    +info-studio-slider()
+                    +info-studio-thumbs()
                     
                 .info__right
                     ul.info__list 
@@ -61,5 +61,27 @@ mixin info-studio()
                         li.info__p студия оснащена food-оборудованием
                         li.info__p студия укомплектована профессиональной техникой premium сегмента для съемки уникального контента
                         li.info__p идеальные условия для создания контента - выполнены аудио-подготовка и шумоизоляция
+                    a(href="#bron").btn.info__btn Забронировать студию 
+
+mixin info-video-recepts()
+    section.section.info.hero 
+        .info__body.container 
+            h1.info__title.title Видео-рецепты
+            .info__content 
+                .info__slider 
+                    +info-studio-slider()
+                    +info-studio-thumbs()
+                    
+                .info__right
+                    p.info__txt Съемка процесса приготовления блюда в нашем отдельном видео-зале или прямо на кухне.
+                    .info__titem 
+                        p.info__titem-title Профессионализм
+                        p.info__titem-p В данном формате видео повар рассказывает и показывает полный процесс приготовления блюда или полуфабриката.
+                    .info__titem 
+                        p.info__titem-title Качественный подход
+                        p.info__titem-p Цель этого видео - донести качество ингредиентов и хороший подход к приготовлению или раскрыть секрет приготовления того или иного блюда.
+                    .info__titem 
+                        p.info__titem-title На выходе готовый видео-рецепт
+                        p.info__titem-p На этапе постпродакшена мы собираем длительный (или не очень) процесс готовки в ролик до 15 минут, накладываем закадровый голос.
                     a(href="#bron").btn.info__btn Забронировать студию 
             

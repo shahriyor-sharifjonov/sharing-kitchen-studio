@@ -2083,6 +2083,37 @@ input[type=checkbox]::before {
   margin-bottom: 40px;
 }
 
+.info__txt {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 32px;
+  line-height: 36px;
+  color: #2A303E;
+}
+
+.info__titem:not(:last-of-type) {
+  margin-bottom: 32px;
+}
+
+.info__titem:last-of-type {
+  margin-bottom: 64px;
+}
+
+.info__titem-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #2A303E;
+}
+
+.info__titem-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2A303E;
+}
+
 .info__p {
   font-weight: 400;
   font-size: 24px;
@@ -3417,6 +3448,12 @@ input[type=checkbox]::before {
 
   .info__action {
     padding: 0 8px;
+  }
+
+  .info__txt {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .info__p {
