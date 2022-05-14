@@ -7,6 +7,9 @@
     @include media(576){
         padding: 50px 0;
     }
+    &.light{
+        background: #fff;
+    }
     &__content{
         display: flex;
         justify-content: space-between;

@@ -508,6 +508,7 @@ input[type=checkbox]::before {
   -webkit-box-shadow: 0px 5px 25px rgba(149, 111, 57, 0.09);
           box-shadow: 0px 5px 25px rgba(149, 111, 57, 0.09);
   border-radius: 16px;
+  overflow: hidden;
 }
 
 .header__dropdown-li:not(:last-of-type) {
@@ -1344,6 +1345,10 @@ input[type=checkbox]::before {
   background: var(--bg);
 }
 
+.equipment.light {
+  background: #fff;
+}
+
 .equipment__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1705,6 +1710,135 @@ input[type=checkbox]::before {
   height: 100%;
 }
 
+.info {
+  padding-top: 70px;
+}
+
+.info__title {
+  text-align: center;
+}
+
+.info__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 84px;
+     -moz-column-gap: 84px;
+          column-gap: 84px;
+}
+
+.info__slider {
+  width: 50%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.info__swiper {
+  width: 100%;
+  position: relative;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.info__swiper_2 {
+  -webkit-box-shadow: 0px 0px 29px 14px rgba(171, 158, 137, 0.42);
+          box-shadow: 0px 0px 29px 14px rgba(171, 158, 137, 0.42);
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
+
+.info__swiper_1 .swiper-slide {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.info__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.info__wrapper:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.info__item {
+  width: 100%;
+}
+
+.info__item img {
+  width: 100%;
+}
+
+.info__action {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  pointer-events: none;
+  padding: 0 24px;
+}
+
+.info__action * {
+  pointer-events: all;
+}
+
+.info__right {
+  width: 50%;
+}
+
+.info__list {
+  margin-bottom: 40px;
+}
+
+.info__p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2A303E;
+  position: relative;
+  padding-left: 36px;
+}
+
+.info__p::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #2A303E;
+}
+
+.info__btn {
+  max-width: 100%;
+  text-align: center;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -1890,6 +2024,10 @@ input[type=checkbox]::before {
   .contacts__title {
     margin-bottom: 20px;
   }
+
+  .info__p {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -2041,6 +2179,11 @@ input[type=checkbox]::before {
   .contacts__title {
     margin-bottom: 20px;
   }
+
+  .info__p {
+    font-size: 20px;
+    line-height: 140%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2094,6 +2237,16 @@ input[type=checkbox]::before {
 
   .equipment__item-title {
     font-size: 24px;
+  }
+
+  .info__content {
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+
+  .info__list {
+    margin-bottom: 16px;
   }
 }
 
@@ -2190,6 +2343,26 @@ input[type=checkbox]::before {
   }
 
   .contacts__map {
+    width: 100%;
+  }
+
+  .info__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 17px;
+  }
+
+  .info__slider {
+    width: 100%;
+  }
+
+  .info__swiper_1 .swiper-slide {
+    width: 100px;
+  }
+
+  .info__right {
     width: 100%;
   }
 }
@@ -2473,6 +2646,23 @@ input[type=checkbox]::before {
     line-height: 24px;
     padding: 16px 20px;
     text-align: center;
+  }
+
+  .info {
+    padding-top: 24px;
+  }
+
+  .info__action {
+    padding: 0 8px;
+  }
+
+  .info__p {
+    font-size: 16px;
+  }
+
+  .info__btn {
+    width: 100%;
+    padding: 17px;
   }
 }
 

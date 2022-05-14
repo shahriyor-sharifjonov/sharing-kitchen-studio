@@ -1,0 +1,65 @@
+mixin info-slider()
+    .info__swiper.swiper.info__swiper_2
+        .info__wrapper.swiper-wrapper 
+            .info__item.swiper-slide
+                img(src="@img/location-img-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/location-img-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/location-img-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/location-img-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/location-img-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/location-img-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/location-img-1.png", alt="" draggable="false")
+        .info__action
+            .info__prev.swiper-button-prev
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="white"/>
+                    <path d="M23.4085 15.4121L21.9991 14.0027L16.0016 20.0002L21.9991 25.9977L23.4085 24.5882L18.8304 20.0002L23.4085 15.4121Z" fill="#2A303E"/>
+                </svg>
+            .info__next.swiper-button-next
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="white"/>
+                    <path d="M18.0007 14.0027L16.5913 15.4121L21.1694 20.0002L16.5913 24.5882L18.0007 25.9977L23.9982 20.0002L18.0007 14.0027Z" fill="#2A303E"/>
+                </svg>
+
+mixin info-thumbs()
+    .info__swiper.swiper.info__swiper_1(thumbsSlider="")
+        .info__wrapper.swiper-wrapper 
+            .info__item.swiper-slide
+                img(src="@img/location-img-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/location-img-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/location-img-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/location-img-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/location-img-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/location-img-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/location-img-1.png", alt="" draggable="false")
+
+mixin info-studio()
+    section.section.info.hero 
+        .info__body.container 
+            h1.info__title.title Наша студия
+            .info__content 
+                .info__slider 
+                    +info-slider()
+                    +info-thumbs()
+                    
+                .info__right
+                    ul.info__list 
+                        li.info__p максимум удобства (студия находится в одном здании с Sharing Kitchen)
+                        li.info__p удобное расположение
+                        li.info__p студия оснащена food-оборудованием
+                        li.info__p студия укомплектована профессиональной техникой premium сегмента для съемки уникального контента
+                        li.info__p идеальные условия для создания контента - выполнены аудио-подготовка и шумоизоляция
+                    a(href="#bron").btn.info__btn Забронировать студию 
+            

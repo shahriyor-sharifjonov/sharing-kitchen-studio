@@ -5,8 +5,33 @@ mixin equipment-li(p)
             <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4291 7.26044L11.2105 16.7434L5.95703 11.49L6.8052 10.6418L11.1477 14.9843L18.5226 6.47485L19.4291 7.26044Z" fill="white"/>
         </svg>
         | #{p}
+
 mixin equipment()
     section.section.equipment
+        .equipment__body.container
+            h2.title.equipment__title #[span Оснащение] студии
+            .equipment__content
+                .equipment__item
+                    p.equipment__item-title Food-техника
+                    .equipment__item-img
+                        img(src="@img/equipment-1.png", alt="" draggable="false")
+                    ul.equipment__list 
+                        +equipment-li('Удобная кухонная мебель, кухонный островок')
+                        +equipment-li('Профессиональная варочная панель')
+                        +equipment-li('Несколько удобных локаций внутри студии для съемок любого видеоконтента')
+                .equipment__item
+                    p.equipment__item-title Видео- и аудио-техника
+                    .equipment__item-img
+                        img(src="@img/equipment-2.png", alt="" draggable="false")
+                    ul.equipment__list 
+                        +equipment-li('Камеры Blackmagic Pocket Cinema Camera 6K, а также камеры Sony a7c, Sony 6400')
+                        +equipment-li('Объективы SIGMA 50-100mm f1.8 и SIGMA 18-35mm f1.8')
+                        +equipment-li('Стабилизатор DJI RS2')
+                        +equipment-li('Студийный свет Apture и Godox')
+                        +equipment-li('Профессиональные микрофоны Shure SM7B и петлички Rode')
+
+mixin equipment-2()
+    section.section.equipment.light
         .equipment__body.container
             h2.title.equipment__title #[span Оснащение] студии
             .equipment__content

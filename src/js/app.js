@@ -1,5 +1,5 @@
 import * as functions from "./modules/functions.js";
-import Swiper, { Grid, Navigation, Pagination } from 'swiper';
+import Swiper, { Grid, Navigation, Pagination, Thumbs } from 'swiper';
 import $ from 'jquery';
 
 functions.isWebp();
@@ -158,4 +158,27 @@ new Swiper(".works__swiper", {
       slidesPerView: 2,
     }
   }
+});
+
+const infoSlider = new Swiper(".info__swiper_1", {
+  spaceBetween: 10,
+  slidesPerView: "auto",
+  freeMode: true,
+  watchSlidesProgress: true,
+  breakpoints: {
+    998: {
+      slidesPerView: 5,
+    }
+  }
+});
+
+new Swiper(".info__swiper_2", {
+  modules: [Thumbs, Navigation],
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: infoSlider,
+  },
 });
