@@ -63,14 +63,57 @@ mixin info-studio()
                         li.info__p идеальные условия для создания контента - выполнены аудио-подготовка и шумоизоляция
                     a(href="#bron").btn.info__btn Забронировать студию 
 
+mixin info-video-recepts-slider()
+    .info__swiper.swiper.info__swiper_2
+        .info__wrapper.swiper-wrapper 
+            .info__item.swiper-slide
+                img(src="@img/video-recept-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/video-recept-2.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/video-recept-3.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/video-recept-4.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/video-recept-5.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/video-recept-6.png", alt="" draggable="false")
+        .info__action
+            .info__prev.swiper-button-prev
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="white"/>
+                    <path d="M23.4085 15.4121L21.9991 14.0027L16.0016 20.0002L21.9991 25.9977L23.4085 24.5882L18.8304 20.0002L23.4085 15.4121Z" fill="#2A303E"/>
+                </svg>
+            .info__next.swiper-button-next
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="white"/>
+                    <path d="M18.0007 14.0027L16.5913 15.4121L21.1694 20.0002L16.5913 24.5882L18.0007 25.9977L23.9982 20.0002L18.0007 14.0027Z" fill="#2A303E"/>
+                </svg>
+
+mixin info-video-recepts-thumbs()
+    .info__swiper.swiper.info__swiper_1(thumbsSlider="")
+        .info__wrapper.swiper-wrapper 
+            .info__item.swiper-slide
+                img(src="@img/video-recept-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/video-recept-2.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/video-recept-3.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/video-recept-4.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/video-recept-5.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/video-recept-6.png", alt="" draggable="false")
+
 mixin info-video-recepts()
     section.section.info.hero 
         .info__body.container 
             h1.info__title.title Видео-рецепты
             .info__content 
                 .info__slider 
-                    +info-studio-slider()
-                    +info-studio-thumbs()
+                    +info-video-recepts-slider()
+                    +info-video-recepts-thumbs()
                     
                 .info__right
                     p.info__txt Съемка процесса приготовления блюда в нашем отдельном видео-зале или прямо на кухне.
