@@ -363,6 +363,175 @@ input[type=checkbox]::before {
   transition: 300ms ease-out;
 }
 
+.ui-datepicker-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  border-bottom: 1px solid #ECEAE3;
+  padding: 30px 90px;
+}
+
+.ui-datepicker-year,
+.ui-datepicker-month {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #2A303E;
+}
+
+.ui-datepicker-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 90px;
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+  background: url("../img/arrow-right.svg") 100% 100%/cover no-repeat;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.ui-datepicker-next.ui-state-disabled {
+  opacity: 0.5;
+}
+
+.ui-datepicker-prev {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 90px;
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+  background: url("../img/arrow-left.svg") 100% 100%/cover no-repeat;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.ui-datepicker-prev.ui-state-disabled {
+  opacity: 0.5;
+}
+
+.ui-datepicker-calendar {
+  width: 100%;
+  padding: 30px 90px;
+}
+
+.ui-datepicker-today * {
+  color: inherit;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #E3B983 !important;
+  border: 2.5px solid #E3B983;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ui-datepicker-unselectable * {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #CAB79A !important;
+}
+
+.ui-datepicker-current-day * {
+  color: inherit;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #333333 !important;
+  background: #E3B983;
+  border: 2.5px solid #E3B983;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ui-datepicker thead tr th * {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #CAB79A;
+  width: 56px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.ui-datepicker tbody tr td * {
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+  width: 56px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #2A303E;
+}
+
 .header {
   height: 100px;
   display: -webkit-box;
@@ -1839,6 +2008,146 @@ input[type=checkbox]::before {
   text-align: center;
 }
 
+.bron {
+  background: var(--bg);
+  padding: 200px 0;
+}
+
+.bron__title {
+  text-align: center;
+}
+
+.bron__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 90px;
+     -moz-column-gap: 90px;
+          column-gap: 90px;
+  row-gap: 24px;
+}
+
+.bron__calendar {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 44px -4px rgba(149, 111, 57, 0.14);
+          box-shadow: 0px 0px 44px -4px rgba(149, 111, 57, 0.14);
+  border-radius: 28.5px;
+  width: 50%;
+}
+
+.bron__form {
+  max-width: 646px;
+  width: 50%;
+}
+
+.bron__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.bron__row:first-of-type {
+  margin-bottom: 16px;
+}
+
+.bron__row:nth-child(2) {
+  margin-bottom: 56px;
+}
+
+.bron__row b {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2A303E;
+}
+
+.bron__row-left {
+  width: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2A303E;
+}
+
+.bron__field input {
+  max-width: 646px;
+}
+
+.bron__btn {
+  width: 100%;
+}
+
+.bron__time {
+  width: 100%;
+  padding: 20px 90px 40px 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 24px;
+}
+
+.bron__time-item {
+  position: relative;
+  width: calc(25% - 18px);
+  height: 48px;
+}
+
+.bron__time-item input:checked ~ label {
+  background: #E3B983;
+  border-color: #E3B983;
+}
+
+.bron__time-item label {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #333333;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -2028,6 +2337,10 @@ input[type=checkbox]::before {
   .info__p {
     font-size: 22px;
   }
+
+  .bron {
+    padding: 100px 0;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -2082,6 +2395,14 @@ input[type=checkbox]::before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .ui-datepicker-header {
+    padding: 30px;
+  }
+
+  .ui-datepicker-calendar {
+    padding: 30px;
   }
 
   .header__list {
@@ -2184,6 +2505,10 @@ input[type=checkbox]::before {
     font-size: 20px;
     line-height: 140%;
   }
+
+  .bron__time {
+    padding: 20px 30px 40px 30px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2247,6 +2572,12 @@ input[type=checkbox]::before {
 
   .info__list {
     margin-bottom: 16px;
+  }
+
+  .bron__content {
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
   }
 }
 
@@ -2365,6 +2696,41 @@ input[type=checkbox]::before {
   .info__right {
     width: 100%;
   }
+
+  .bron__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .bron__calendar {
+    width: 100%;
+  }
+
+  .bron__form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .bron__field input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .bron__row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .bron__row:nth-child(2) {
+    margin-bottom: 24px;
+  }
+
+  .bron__row b {
+    text-align: right;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2392,6 +2758,57 @@ input[type=checkbox]::before {
   .input {
     font-size: 20px;
     max-height: 70px;
+  }
+
+  .ui-datepicker-header {
+    padding: 16px 24px;
+  }
+
+  .ui-datepicker-year,
+  .ui-datepicker-month {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .ui-datepicker-next {
+    right: 8px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .ui-datepicker-prev {
+    left: 8px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .ui-datepicker-calendar {
+    padding: 16px 24px;
+  }
+
+  .ui-datepicker-today * {
+    border-radius: 2px;
+  }
+
+  .ui-datepicker-current-day * {
+    border-radius: 2px;
+  }
+
+  .ui-datepicker thead tr th * {
+    width: 30px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .ui-datepicker tbody tr td * {
+    width: 30px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
   }
 
   .header {
@@ -2487,6 +2904,15 @@ input[type=checkbox]::before {
     font-size: 16px;
     line-height: 24px;
   }
+
+  .bron__time {
+    padding: 0 24px 24px 24px;
+  }
+
+  .bron__time-item label {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2499,6 +2925,25 @@ input[type=checkbox]::before {
 
   .hero {
     padding-bottom: 75px;
+  }
+
+  .input {
+    font-size: 18px;
+    height: 50px;
+  }
+
+  .ui-datepicker thead tr th * {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .ui-datepicker tbody tr td * {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    line-height: 16px;
   }
 
   .intro__title {
@@ -2662,6 +3107,35 @@ input[type=checkbox]::before {
 
   .info__btn {
     width: 100%;
+    padding: 17px;
+  }
+
+  .bron {
+    padding: 50px 0px;
+  }
+
+  .bron__row b {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .bron__row-left {
+    font-size: 16px;
+    min-width: 165px;
+    width: 200px;
+    line-height: 24px;
+  }
+
+  .bron__time {
+    gap: 16px 8px;
+  }
+
+  .bron__time-item {
+    width: calc(25% - 6px);
+    height: 36px;
+  }
+
+  .bron__btn {
     padding: 17px;
   }
 }

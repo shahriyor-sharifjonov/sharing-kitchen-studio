@@ -1,6 +1,5 @@
 import * as functions from "./modules/functions.js";
 import Swiper, { Grid, Navigation, Pagination, Thumbs } from 'swiper';
-import $ from 'jquery';
 
 functions.isWebp();
 
@@ -182,3 +181,31 @@ new Swiper(".info__swiper_2", {
     swiper: infoSlider,
   },
 });
+
+if(document.querySelector('.datepicker')){
+  $(".datepicker").datepicker({ 
+    dateFormat: 'dd/mm/yy',
+    minDate: 0, maxDate: "+1M +10D",
+    closeText:"Закрыть",prevText:"&#x3C;Пред",nextText:"След&#x3E;",currentText:"Сегодня",monthNames:["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],monthNamesShort:["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],dayNames:["воскресенье","понедельник","вторник","среда","четверг","пятница","суббота"],dayNamesShort:["вск","пнд","втр","срд","чтв","птн","сбт"],
+    dayNamesMin:["Вс","Пн","Вт","Ср","Чт","Пт","Сб"],
+    monthNames:["Январ","Феврал","Март","Апрел","Май","Июн","Июл","Август","Сентябр","Октябр","Ноябр","Декабр"],
+    monthNamesShort:["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"]
+  });
+  $(".datepicker").change(function(){
+    document.getElementById('alternate').innerHTML = $(".datepicker").val()
+  });
+  document.getElementById('alternate').innerHTML = $(".datepicker").val()
+}
+
+document.querySelectorAll('.bron__content').forEach(el=>{
+  const inputs = el.querySelectorAll('.bron__time input');
+  inputs.forEach(input=>{
+    input.addEventListener('input', bron)
+  })   
+  function bron(){
+    const time = el.querySelector('#time');
+    let checkedInputs = el.querySelectorAll('.bron__time input:checked');
+    checkedInputs = el.querySelectorAll('.bron__time input:checked');
+    time.innerHTML = `${checkedInputs.length} час`
+  }
+})
