@@ -552,3 +552,44 @@ input[type="checkbox"]{
         }
     }
 }
+.facility{
+    padding-top: 40px;
+    &__body{
+        @include media(992){
+            flex-direction: column !important;
+        }
+    }
+    &__content{
+        max-width: 50%;
+        @include media(992){
+            max-width: 100%;
+        }
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: #2A303E;
+        margin-bottom: 48px;
+        @include media(576){
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 24px;
+        }
+    }
+    &__info{
+        &-title{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 8px;
+            color: #2A303E;
+        }
+        &-p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #2A303E;
+        }
+    }
+}

@@ -592,6 +592,37 @@ input[type=checkbox]::before {
   color: #2A303E;
 }
 
+.facility {
+  padding-top: 40px;
+}
+
+.facility__content {
+  max-width: 50%;
+}
+
+.facility__p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2A303E;
+  margin-bottom: 48px;
+}
+
+.facility__info-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #2A303E;
+}
+
+.facility__info-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2A303E;
+}
+
 .header {
   height: 100px;
   display: -webkit-box;
@@ -2812,6 +2843,17 @@ input[type=checkbox]::before {
     margin-bottom: 20px;
   }
 
+  .facility__body {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+
+  .facility__content {
+    max-width: 100%;
+  }
+
   .footer__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3198,6 +3240,12 @@ input[type=checkbox]::before {
   .f404__p {
     font-size: 16px;
     line-height: 120%;
+  }
+
+  .facility__p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
   }
 
   .intro__title {
