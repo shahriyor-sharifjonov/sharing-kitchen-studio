@@ -1,0 +1,98 @@
+.price{
+    padding: 200px 0;
+    background: var(--bg);
+    @include media(1900){
+        padding: 100px 0;
+    }
+    @include media(576){
+        padding: 50px 0;
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        @include media(992){
+            flex-wrap: wrap;
+            row-gap: 16px;
+        }
+    }
+    &__item{
+        width: calc(25% - 18px);
+        max-width: 313.71px;
+        @include media(992){
+            max-width: 334px;
+            width: 100%;
+            background: #FFFFFF;
+            border: 1px solid #E3B983;
+            border-radius: 24px;
+            padding: 16px;
+        }
+        @include media(768){
+            width: 100%;
+            max-width: 100%;
+        }
+        &-img{
+            width: 100%;
+            margin-bottom: 25px;
+            line-height: 0;
+            max-width: 313.71px;
+            @include media(992){
+                border-radius: 24px;
+                background: #F1E3D1;
+            }
+            @include media(768){
+                width: 104px;
+                margin-bottom: 16px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        &-title{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            color: #333333;
+            margin-bottom: 16px;
+            @include media(576){
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 8px;
+            }
+        }
+        &-p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 120%;
+            color: #333333;
+            @include media(576){
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &.warning{
+                margin-top: 16px;
+                position: relative;
+                color: #D87B28;
+                @include media(992){
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    column-gap: 8px;
+                }
+                @include media(576){
+                    margin-top: 8px;
+                }
+                svg{
+                    position: absolute;
+                    left: -32px;
+                    top: 0;
+                    @include media(992){
+                        position: static;
+                        width: 24px;
+                        height: 24px;
+                        min-width: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

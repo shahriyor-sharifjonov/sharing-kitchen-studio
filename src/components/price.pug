@@ -1,0 +1,30 @@
+mixin price()
+    .section.section.price 
+        .price__body.container 
+            h2.title.price__title Из чего складывается #[br]#[span стоимость?]
+            .price__row 
+                .price__item 
+                    .price__item-img 
+                        img(src="@img/price-1.png", alt="" draggable="false")
+                    p.price__item-title Количество часов аренды студии
+                    p.price__item-p Вы можете арендовать студию на весь день или на несколько часов. 
+                    p.price__item-p.warning 
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99499 2.50621C10.9033 0.764532 13.0971 0.764529 14.0054 2.50621L22.4633 18.7252C23.3985 20.5185 22.2758 22.7999 20.4581 22.7999H3.54225C1.72459 22.7999 0.601873 20.5185 1.53705 18.7252L9.99499 2.50621ZM10.8002 13.8V7.79995H13.2002V13.8H10.8002ZM12.0002 19.1999C11.0061 19.1999 10.2002 18.3941 10.2002 17.4C10.2002 16.4058 11.0061 15.6 12.0002 15.6C12.9943 15.6 13.8002 16.4058 13.8002 17.4C13.8002 18.3941 12.9943 19.1999 12.0002 19.1999Z" fill="#F2994A"/>
+                        </svg>
+                        |Важное условие - минимальный срок аренды - 2 часа.
+                .price__item 
+                    .price__item-img 
+                        img(src="@img/price-2.png", alt="" draggable="false")
+                    p.price__item-title Хронометраж конечного продукта
+                    p.price__item-p Разные продукты - разные форматы, а соответственно и длина конечного продукта будет разной. Это влияет на стоимость
+                .price__item 
+                    .price__item-img 
+                        img(src="@img/price-3.png", alt="" draggable="false")
+                    p.price__item-title Комплект выбранных услуг
+                    p.price__item-p У нас вы можете арендовать студию и получить любые услуги под ключ, либо заказать отдельно работу по отдельным этапам:#[br]- препродакшен#[br]- продакшен#[br]- постпродакшен
+                .price__item 
+                    .price__item-img 
+                        img(src="@img/price-4.png", alt="" draggable="false")
+                    p.price__item-title Привлеченные специалисты
+                    p.price__item-p Для вас мы готовы предоставить буквально любого специалиста в аренду. В зависимости от участников проекта с нашей стороны, будет меняться и итоговая стоимость.
