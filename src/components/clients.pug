@@ -29,3 +29,29 @@ mixin clients()
                     .clients__action-next.swiper-button-next
                         img(src="@img/next.svg", alt="" draggable="false")
                 .clients__pagination.swiper-pagination 
+
+
+
+mixin clients-2()
+    section.section.clients.light  
+        .clients__body.container 
+            h2.title.clients__title Наши #[span клиенты]
+            .clients__slider 
+                .clients__swiper.swiper 
+                    .clients__wrapper.swiper-wrapper 
+                        +clients-item('1', 'Julius Meinl')
+                        +clients-item('2', 'Высший молочный стандарт')
+                        +clients-item('3', 'Чайхона номер один')
+                        +clients-item('4', 'NeoFit')
+                        +clients-item('5', 'Черкизовский завод')
+                        +clients-item('1', 'Julius Meinl')
+                        +clients-item('2', 'Высший молочный стандарт')
+                        +clients-item('3', 'Чайхона номер один')
+                        +clients-item('4', 'NeoFit')
+                        +clients-item('5', 'Черкизовский завод')
+                .clients__action 
+                    .clients__action-prev.swiper-button-prev
+                        img(src="@img/prev.svg", alt="" draggable="false")
+                    .clients__action-next.swiper-button-next
+                        img(src="@img/next.svg", alt="" draggable="false")
+                .clients__pagination.swiper-pagination 

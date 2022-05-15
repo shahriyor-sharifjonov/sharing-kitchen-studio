@@ -1,6 +1,9 @@
 .clients{
     padding: 200px 0;
     background: var(--bg);
+    &.light{
+        background: #fff;
+    }
     @include media(1900){
         padding: 100px 0;
     }

@@ -79,4 +79,148 @@
             width: 100%;
         }
     }
+    &-clients{
+        flex-direction: column;
+        padding-top: 70px;
+        @include media(1400){
+            padding-top: 24px;
+        }
+        @include media(992){
+            flex-direction: column;
+        }
+        &__title{
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 72px;
+            text-align: center;
+            color: #2A303E;     
+            margin-bottom: 24px; 
+            @include media(1400){
+                font-size: 36px;
+                line-height: 120%;
+                margin-bottom: 16px;
+            }      
+        }
+        &__p{
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 48px;
+            text-align: center;
+            color: #2A303E;
+            margin-bottom: 78px;
+            @include media(1400){
+                font-size: 24px;
+                line-height: 120%;
+                margin-bottom: 32px;
+            }      
+        }
+        &__content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 16px 60px;
+            @include media(1900){
+                gap: 16px;
+            }
+        }
+        &__item{
+            width: calc(25% - 128px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include media(1900){
+                width: calc(25% - 78px);
+            }
+            @include media(1400){
+                width: calc(50% - 8px);
+            }
+            &.big{
+                @include media(1400){
+                    order: 1;
+                    width: 100%;
+                    .intro-clients__item-img{
+                        display: none;
+                        &.dn{
+                            display: block;
+                            width: 100%;
+                            max-width: 830px;
+                            height: 280px;
+                            @include media(576){
+                                height: 156px;
+                            }
+                            img{
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            &-img{
+                width: 100%;
+                margin-bottom: 26px;
+                line-height: 0;
+                max-width: 280px;
+                @include media(1400){
+                    margin-bottom: 16px;
+                }
+                &.dn{
+                    display: none;
+                }
+                img{
+                    object-fit: cover;
+                    border-radius: 50px;
+                    width: 100%;
+                    box-shadow: 0px 0px 44px 0px #956F394F;
+                    @include media(380){
+                        border-radius: 30px;
+                    }
+                }
+            }
+            &-title{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 36px;
+                text-align: center;
+                color: #2A303E;                
+                margin-bottom: 12px;
+                @include media(576){
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 8px;
+                }
+            }
+            &-p{
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: #2A303E;
+                @include media(576){
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+                &.dot{
+                    margin-bottom: 8px;
+                    &::before{
+                        content: '';
+                        display: inline-block;
+                        min-width: 4px;
+                        margin-top: -9px;
+                        position: relative;
+                        margin-right: 10px;    
+                        top: -3px;
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 50%;
+                        background: #2A303E;
+                        @include media(576){
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

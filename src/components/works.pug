@@ -36,3 +36,30 @@ mixin works()
                         +works-item('2', 'HYPERPC AMPERE - самый премиальный и мощный ПК!', 'Съемка процесса сборки') 
                         +works-item('1', 'SandWichBar', 'Реклама для ресторана') 
                         +works-item('2', 'HYPERPC AMPERE - самый премиальный и мощный ПК!', 'Съемка процесса сборки') 
+
+
+mixin works-2() 
+    section.section.works.bg 
+        .works__body.container 
+            h2.title.works__title Наши #[span работы] 
+            p.section__desc.works__desc Посмотрите прямо здесь и сейчас 
+            .works__slider 
+                .works__action 
+                    .works__prev.swiper-button-prev 
+                        <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1.20769" y="0.86254" width="70.4705" height="70.4705" rx="35.2352" fill="white"/>
+                        <path d="M43.2601 26.9217L40.4413 24.1028L28.4463 36.0978L40.4413 48.0928L43.2601 45.274L34.1039 36.0978L43.2601 26.9217Z" fill="#2A303E"/>
+                        <rect x="1.20769" y="0.86254" width="70.4705" height="70.4705" rx="35.2352" stroke="#ECEAE3" stroke-width="1.49937"/>
+                        </svg> 
+                    .works__next.swiper-button-next 
+                        <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1.00066" y="0.86254" width="70.4705" height="70.4705" rx="35.2352" fill="white"/>
+                        <path d="M32.2376 24.1028L29.4188 26.9217L38.575 36.0978L29.4188 45.274L32.2376 48.0928L44.2326 36.0978L32.2376 24.1028Z" fill="#2A303E"/>
+                        <rect x="1.00066" y="0.86254" width="70.4705" height="70.4705" rx="35.2352" stroke="#ECEAE3" stroke-width="1.49937"/>
+                        </svg> 
+                .works__swiper.swiper 
+                    .works__wrapper.swiper-wrapper 
+                        +works-item('1', 'SandWichBar', 'Реклама для ресторана') 
+                        +works-item('2', 'HYPERPC AMPERE - самый премиальный и мощный ПК!', 'Съемка процесса сборки') 
+                        +works-item('1', 'SandWichBar', 'Реклама для ресторана') 
+                        +works-item('2', 'HYPERPC AMPERE - самый премиальный и мощный ПК!', 'Съемка процесса сборки') 

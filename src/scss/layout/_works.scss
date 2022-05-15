@@ -1,5 +1,8 @@
 .works{
     padding: 200px 0;
+    &.bg{
+        background: var(--bg);
+    }
     @include media(1900){
         padding: 100px 0;
     }
