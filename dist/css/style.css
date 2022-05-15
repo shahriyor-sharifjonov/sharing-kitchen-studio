@@ -2455,6 +2455,127 @@ input[type=checkbox]::before {
   top: 0;
 }
 
+.approximate {
+  padding: 200px 0;
+}
+
+.approximate__title {
+  text-align: center;
+}
+
+.approximate__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.approximate__item {
+  width: calc(50% - 8px);
+  background: #FFFFFF;
+  border: 1.5px solid #E3B983;
+  border-radius: 28px;
+  padding: 64px 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.approximate__item.active {
+  background: #F4DDBE;
+  border-color: #F4DDBE;
+}
+
+.approximate__item-title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  color: #2A303E;
+}
+
+.approximate__item-time {
+  min-height: 76px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #2A303E;
+}
+
+.approximate__item-sep {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-height: 100px;
+}
+
+.approximate__item-p {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2A303E;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+  margin-bottom: 24px;
+}
+
+.approximate__item-p svg {
+  margin-top: 7.5px;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+}
+
+.approximate__item-price {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #2A303E;
+}
+
+.approximate__item-price span {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.approximate__item-info {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+.approximate__item-btn {
+  margin-top: 24px;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -2654,6 +2775,10 @@ input[type=checkbox]::before {
   }
 
   .price {
+    padding: 100px 0;
+  }
+
+  .approximate {
     padding: 100px 0;
   }
 }
@@ -2912,6 +3037,39 @@ input[type=checkbox]::before {
     margin-left: 0;
     margin-top: -60px;
   }
+
+  .approximate__item-title {
+    margin-bottom: 8px;
+  }
+
+  .approximate__item-time {
+    font-size: 18px;
+    min-height: 48px;
+  }
+
+  .approximate__item-p {
+    font-size: 18px;
+    line-height: 120%;
+  }
+
+  .approximate__item-p svg {
+    margin-top: 0;
+  }
+
+  .approximate__item-price {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .approximate__item-price span {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .approximate__item-info {
+    font-size: 14px;
+    line-height: 120%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -3158,6 +3316,26 @@ input[type=checkbox]::before {
     width: 24px;
     height: 24px;
     min-width: 24px;
+  }
+
+  .approximate__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 16px;
+  }
+
+  .approximate__item {
+    width: 100%;
+  }
+
+  .approximate__item-title.dn {
+    margin-bottom: 24px;
+  }
+
+  .approximate__item-time.dn {
+    display: none;
   }
 }
 
@@ -3649,6 +3827,41 @@ input[type=checkbox]::before {
 
   .price__item-p.warning {
     margin-top: 8px;
+  }
+
+  .approximate {
+    padding: 50px 0;
+  }
+
+  .approximate__item {
+    padding: 32px 16px 16px 16px;
+  }
+
+  .approximate__item-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .approximate__item-sep.dn {
+    display: none;
+  }
+
+  .approximate__item-sep {
+    min-height: 72px;
+  }
+
+  .approximate__item-p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .approximate__item-info {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .approximate__item-btn {
+    width: 100%;
   }
 }
 
