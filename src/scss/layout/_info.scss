@@ -9,6 +9,7 @@
     &__content{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         column-gap: 84px;
         @include media(1200){
             column-gap: 30px;
@@ -19,6 +20,7 @@
         }
     }
     &__slider{
+        margin-bottom: auto;
         width: 50%;
         user-select: none;
         @include media(992){

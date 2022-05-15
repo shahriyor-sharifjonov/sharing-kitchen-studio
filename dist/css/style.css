@@ -1994,12 +1994,16 @@ input[type=checkbox]::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-column-gap: 84px;
      -moz-column-gap: 84px;
           column-gap: 84px;
 }
 
 .info__slider {
+  margin-bottom: auto;
   width: 50%;
   -webkit-user-select: none;
      -moz-user-select: none;

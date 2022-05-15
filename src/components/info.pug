@@ -251,3 +251,125 @@ mixin info-video-reviews()
                         p.info__titem-title Качественный подход
                         p.info__titem-p При монтаже мы накладываем графику и пояснения. Аналогия любой рекламы чайника или миксера на телевидении.
                     a(href="#bron").btn.info__btn Забронировать студию 
+
+
+
+mixin info-object-shooting-slider()
+    .info__swiper.swiper.info__swiper_2
+        .info__wrapper.swiper-wrapper 
+            .info__item.swiper-slide
+                img(src="@img/object-shooting-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/object-shooting-2.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/object-shooting-3.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/object-shooting-4.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/object-shooting-5.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/object-shooting-6.png", alt="" draggable="false")
+        .info__action
+            .info__prev.swiper-button-prev
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="white"/>
+                    <path d="M23.4085 15.4121L21.9991 14.0027L16.0016 20.0002L21.9991 25.9977L23.4085 24.5882L18.8304 20.0002L23.4085 15.4121Z" fill="#2A303E"/>
+                </svg>
+            .info__next.swiper-button-next
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="white"/>
+                    <path d="M18.0007 14.0027L16.5913 15.4121L21.1694 20.0002L16.5913 24.5882L18.0007 25.9977L23.9982 20.0002L18.0007 14.0027Z" fill="#2A303E"/>
+                </svg>
+
+mixin info-object-shooting-thumbs()
+    .info__swiper.swiper.info__swiper_1(thumbsSlider="")
+        .info__wrapper.swiper-wrapper 
+            .info__item.swiper-slide
+                img(src="@img/object-shooting-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/object-shooting-2.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/object-shooting-3.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/object-shooting-4.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/object-shooting-5.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/object-shooting-6.png", alt="" draggable="false")
+
+mixin info-object-shooting()
+    section.section.info.hero 
+        .info__body.container 
+            h1.info__title.title Предметная съемка
+            .info__content 
+                .info__slider 
+                    +info-object-shooting-slider()
+                    +info-object-shooting-thumbs()
+                    
+                .info__right
+                    p.info__txt Короткий ролик показывающий готовое блюдо или краткий процесс приготовления, но без тонкостей и затем уже готовое блюдо.
+                    .info__titem 
+                        p.info__titem-title Профессионализм
+                        p.info__titem-p Это может быть съемка одного человека с оборудованием, про которое он рассказывает и демонстрирует его работу.  Также возможет формат в виде обзора техники/еды перед залом (люди сидят перед ведущим в зале и проводит презентацию). Мы это снимаем и монтируем в виде семинара.
+                    .info__titem 
+                        p.info__titem-title Качественный подход
+                        p.info__titem-p При монтаже мы накладываем графику и пояснения. Аналогия любой рекламы чайника или миксера на телевидении.
+                    a(href="#bron").btn.info__btn Забронировать студию 
+
+
+
+mixin info-vebinars-slider()
+    .info__swiper.swiper.info__swiper_2
+        .info__wrapper.swiper-wrapper 
+            .info__item.swiper-slide
+                img(src="@img/vebinars-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/vebinars-2.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/vebinars-3.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/vebinars-4.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/vebinars-5.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/vebinars-6.png", alt="" draggable="false")
+        .info__action
+            .info__prev.swiper-button-prev
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="white"/>
+                    <path d="M23.4085 15.4121L21.9991 14.0027L16.0016 20.0002L21.9991 25.9977L23.4085 24.5882L18.8304 20.0002L23.4085 15.4121Z" fill="#2A303E"/>
+                </svg>
+            .info__next.swiper-button-next
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="white"/>
+                    <path d="M18.0007 14.0027L16.5913 15.4121L21.1694 20.0002L16.5913 24.5882L18.0007 25.9977L23.9982 20.0002L18.0007 14.0027Z" fill="#2A303E"/>
+                </svg>
+
+mixin info-vebinars-thumbs()
+    .info__swiper.swiper.info__swiper_1(thumbsSlider="")
+        .info__wrapper.swiper-wrapper 
+            .info__item.swiper-slide
+                img(src="@img/vebinars-1.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/vebinars-2.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/vebinars-3.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/vebinars-4.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/vebinars-5.png", alt="" draggable="false")
+            .info__item.swiper-slide
+                img(src="@img/vebinars-6.png", alt="" draggable="false")
+
+mixin info-vebinars()
+    section.section.info.hero 
+        .info__body.container 
+            h1.info__title.title Вебинары/трансляции
+            .info__content 
+                .info__slider 
+                    +info-vebinars-slider()
+                    +info-vebinars-thumbs()
+                    
+                .info__right
+                    p.info__txt Проведение онлайн-трансляции или продающего вебинара любой сложности (до 4-х камер). Можно с презентацией, можно без. Подключение удаленных спикеров по Zoom и другим каналам связи. Организация видео-мостов (видеоконференций).
+                    a(href="#bron").btn.info__btn Забронировать студию 
