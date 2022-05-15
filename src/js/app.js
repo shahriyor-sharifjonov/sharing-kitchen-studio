@@ -159,6 +159,26 @@ new Swiper(".works__swiper", {
   }
 });
 
+new Swiper(".reviews__swiper", {
+  slidesPerView: 1,
+  spaceBetween: 22,
+  watchSlidesProgress: true,
+  slideVisibleClass: 'visible',
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.reviews__next',
+    prevEl: '.reviews__prev'
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 2,
+    }
+  }
+});
+
 const infoSlider = new Swiper(".info__swiper_1", {
   spaceBetween: 10,
   slidesPerView: "auto",
