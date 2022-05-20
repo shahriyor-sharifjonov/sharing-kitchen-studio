@@ -4,7 +4,7 @@ mixin location()
             h2.title.location__title Наша студия #[span в центре Москвы]
             .location__row 
                 .location__slider 
-                    .location__swiper.swiper 
+                    .location__swiper.location__swiper_1.swiper 
                         .location__swiper-wrapper.swiper-wrapper 
                             .location__slide.swiper-slide 
                                 img(src="@img/location-img-1.png", alt="" draggable="false")
@@ -13,8 +13,8 @@ mixin location()
                             .location__slide.swiper-slide 
                                 img(src="@img/location-img-1.png", alt="" draggable="false")
                     .location__buttons 
-                        .location__prev
-                        .location__next
+                        .location__prev.location__prev_1
+                        .location__next.location__next_1
                 .location__content 
                     ul.location__list 
                         li.location__li #[img(src="@img/location-icon-1.svg", alt="" draggable="false")] Михайловский пр-д, 1 строение 3 м. Крестьянская застава / м. Площадь Ильича
@@ -36,7 +36,7 @@ mixin location-2()
                         li.info__p Несколько удобных локаций внутри студии для съемок любого видеоконтента
                     a(href="#!").location__btn.btn Забронировать студию
                 .location__slider 
-                    .location__swiper.swiper 
+                    .location__swiper.location__swiper_2.swiper 
                         .location__swiper-wrapper.swiper-wrapper 
                             .location__slide.swiper-slide 
                                 img(src="@img/location-img-1.png", alt="" draggable="false")
@@ -45,14 +45,14 @@ mixin location-2()
                             .location__slide.swiper-slide 
                                 img(src="@img/location-img-1.png", alt="" draggable="false")
                     .location__buttons 
-                        .location__prev
-                        .location__next
+                        .location__prev.location__prev_2 
+                        .location__next.location__next_2
 mixin location-3()
     section.section.location.bg 
         .location__body.container
             .location__row 
                 .location__slider 
-                    .location__swiper.swiper 
+                    .location__swiper.location__swiper_1.swiper 
                         .location__swiper-wrapper.swiper-wrapper 
                             .location__slide.swiper-slide 
                                 img(src="@img/location-img-1.png", alt="" draggable="false")
@@ -61,8 +61,8 @@ mixin location-3()
                             .location__slide.swiper-slide 
                                 img(src="@img/location-img-1.png", alt="" draggable="false")
                     .location__buttons 
-                        .location__prev
-                        .location__next
+                        .location__prev.location__prev_1 
+                        .location__next.location__next_1
                 .location__content 
                     h2.title.location__title Видео, аудио #[span техника и свет]
                     ul.info__list 

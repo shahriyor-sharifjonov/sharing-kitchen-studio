@@ -22,15 +22,16 @@ mixin how()
                         form(action="#!").how__item-content 
                             p.how__item-title Заявка 
                             p.how__item-p Оставьте заявку. В течение дня с Вами свяжется наш менеджер, обсудит детали и подтвердит бронирование. 
-                            .bid__field.how__item-field 
-                                input(type="text" placeholder="+7 (___) ___-__-__" id="tel3" required).input.bid__input.how__item-input 
-                                <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-                                    <path d="M4.99193 0.681041V3.29323L7.54555 2.40298L8.0141 3.70321L5.46048 4.53489L7.04185 6.7371L5.88218 7.56878L4.34767 5.28458L2.80144 7.56878L1.60663 6.7371L3.21143 4.53489L0.634383 3.70321L1.10294 2.40298L3.63313 3.31665V0.681041H4.99193Z" fill="#999EAB"/> 
-                                </svg> 
-                            .bid__chk.how__item-chk 
-                                input(type="checkbox" checked required id="req3") 
-                                label(for="req3") Я принимаю условия пользовательского соглашения 
-                            button(type="submit").btn.how__item-btn.bi Отправить 
+                            //- .bid__field.how__item-field 
+                            //-     input(type="text" placeholder="+7 (___) ___-__-__" id="tel3" required).input.bid__input.how__item-input 
+                            //-     <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                            //-         <path d="M4.99193 0.681041V3.29323L7.54555 2.40298L8.0141 3.70321L5.46048 4.53489L7.04185 6.7371L5.88218 7.56878L4.34767 5.28458L2.80144 7.56878L1.60663 6.7371L3.21143 4.53489L0.634383 3.70321L1.10294 2.40298L3.63313 3.31665V0.681041H4.99193Z" fill="#999EAB"/> 
+                            //-     </svg> 
+                            //- .bid__chk.how__item-chk 
+                            //-     input(type="checkbox" checked required id="req3") 
+                            //-     label(for="req3") Я принимаю условия пользовательского соглашения 
+                            //- button(type="submit").btn.how__item-btn.bi Отправить 
+                            a(href="#bid").btn.how__item-btn.bi Оставить заявку 
                     .how__item#tz 
                         .how__item-img 
                             img(src="@img/how-2.png", alt="" draggable="false") 
@@ -51,20 +52,20 @@ mixin how()
                         .how__item-content 
                             p.how__item-title Оплата 
                             p.how__item-p Окончательно согласовываем и утверждаем все детали. Вы вносите оплату за аренду. 
-                            .bid__field.how__item-field 
-                                input(type="text" placeholder="+7 (___) ___-__-__" id="tel4" required).input.bid__input.how__item-input 
-                                <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-                                    <path d="M4.99193 0.681041V3.29323L7.54555 2.40298L8.0141 3.70321L5.46048 4.53489L7.04185 6.7371L5.88218 7.56878L4.34767 5.28458L2.80144 7.56878L1.60663 6.7371L3.21143 4.53489L0.634383 3.70321L1.10294 2.40298L3.63313 3.31665V0.681041H4.99193Z" fill="#999EAB"/> 
-                                </svg> 
-                            .bid__chk.how__item-chk 
-                                input(type="checkbox" checked required id="req4") 
-                                label(for="req4") Я принимаю условия пользовательского соглашения 
-                            button(type="submit").btn.how__item-btn Забронировать 
+                            //- .bid__field.how__item-field 
+                            //-     input(type="text" placeholder="+7 (___) ___-__-__" id="tel4" required).input.bid__input.how__item-input 
+                            //-     <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                            //-         <path d="M4.99193 0.681041V3.29323L7.54555 2.40298L8.0141 3.70321L5.46048 4.53489L7.04185 6.7371L5.88218 7.56878L4.34767 5.28458L2.80144 7.56878L1.60663 6.7371L3.21143 4.53489L0.634383 3.70321L1.10294 2.40298L3.63313 3.31665V0.681041H4.99193Z" fill="#999EAB"/> 
+                            //-     </svg> 
+                            //- .bid__chk.how__item-chk 
+                            //-     input(type="checkbox" checked required id="req4") 
+                            //-     label(for="req4") Я принимаю условия пользовательского соглашения 
+                            a(href="#!").btn.how__item-btn Забонировать студию 
                     .how__item#service 
                         .how__item-img 
                             img(src="@img/how-5.png", alt="" draggable="false")
                         .how__item-content 
                             p.how__item-title Получение услуг
                             p.how__item-p К выбранному временем ждем Вас на студии!
-                            a(href="#!").btn.how__item-btn Забронировал студию 
+                            a(href="#!").btn.how__item-btn Забонировать студию 
                     

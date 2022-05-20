@@ -1613,6 +1613,9 @@ input[type=checkbox]::before {
 
 .works {
   padding: 200px 0;
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .works.bg {
@@ -1701,6 +1704,8 @@ input[type=checkbox]::before {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
 }
 
 .works__item-play svg {
@@ -2973,15 +2978,8 @@ input[type=checkbox]::before {
   }
 
   .works__action {
-    position: static;
-    width: 100%;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-column-gap: 8px;
-       -moz-column-gap: 8px;
-            column-gap: 8px;
-    margin-bottom: 24px;
+    width: calc(100% + 120px);
+    left: -60px;
   }
 
   .works__prev {
@@ -3038,6 +3036,23 @@ input[type=checkbox]::before {
        -moz-column-gap: 8px;
             column-gap: 8px;
     margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 1418px) {
+  .works__action {
+    width: calc(100% + 80px);
+    left: -40px;
+  }
+
+  .works__prev {
+    width: 32px;
+    height: 32px;
+  }
+
+  .works__next {
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -3180,6 +3195,21 @@ input[type=checkbox]::before {
     margin-bottom: 16px;
   }
 
+  .works__action {
+    width: calc(100% + 120px);
+    left: -60px;
+  }
+
+  .works__prev {
+    width: 50px;
+    height: 50px;
+  }
+
+  .works__next {
+    width: 50px;
+    height: 50px;
+  }
+
   .equipment__item-title {
     font-size: 28px;
     line-height: 120%;
@@ -3219,6 +3249,23 @@ input[type=checkbox]::before {
   }
 }
 
+@media (max-width: 1240px) {
+  .works__action {
+    width: calc(100% + 80px);
+    left: -40px;
+  }
+
+  .works__prev {
+    width: 32px;
+    height: 32px;
+  }
+
+  .works__next {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 @media (max-width: 1200px) {
   .location__list {
     row-gap: 15px;
@@ -3239,6 +3286,18 @@ input[type=checkbox]::before {
 
   .offer__title {
     font-size: 35px;
+  }
+
+  .works__action {
+    position: static;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+    margin-bottom: 24px;
   }
 
   .works__item-img {
@@ -3759,16 +3818,6 @@ input[type=checkbox]::before {
 
   .works__title {
     margin-bottom: 16px;
-  }
-
-  .works__prev {
-    width: 32px;
-    height: 32px;
-  }
-
-  .works__next {
-    width: 32px;
-    height: 32px;
   }
 
   .works__item-img {

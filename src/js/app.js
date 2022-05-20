@@ -1,5 +1,6 @@
 import * as functions from "./modules/functions.js";
 import Swiper, { Grid, Navigation, Pagination, Thumbs } from 'swiper';
+import IMask from 'imask';
 
 functions.isWebp();
 
@@ -58,13 +59,22 @@ $(document).ready(function() {
   });
 });
 
-new Swiper(".location__swiper", {
+new Swiper(".location__swiper_1", {
   slidesPerView: 1,
   spaceBetween: 0,
   modules: [Navigation],
   navigation: {
-    prevEl: ".location__prev",
-    nextEl: ".location__next",
+    prevEl: ".location__prev_1",
+    nextEl: ".location__next_1",
+  },
+});
+new Swiper(".location__swiper_2", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  modules: [Navigation],
+  navigation: {
+    prevEl: ".location__prev_2",
+    nextEl: ".location__next_2",
   },
 });
 
@@ -248,3 +258,23 @@ if(document.querySelector('.how')){
     })
   })
 }
+
+var phoneMask = IMask(
+  document.getElementById('tel'), {
+    mask: '+{7}(000)000-00-00'
+  });
+
+var phoneMask2 = IMask(
+  document.getElementById('tel2'), {
+    mask: '+{7}(000)000-00-00'
+  });
+
+var phoneMask3 = IMask(
+  document.getElementById('tel3'), {
+    mask: '+{7}(000)000-00-00'
+  });
+
+var phoneMask4 = IMask(
+  document.getElementById('tel4'), {
+    mask: '+{7}(000)000-00-00'
+  });
