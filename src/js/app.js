@@ -1,6 +1,6 @@
 import * as functions from "./modules/functions.js";
-import Swiper, { Grid, Navigation, Pagination, Thumbs } from 'swiper';
-import IMask from 'imask';
+import Swiper, { Grid, Navigation, Pagination, Thumbs } from "swiper";
+import IMask from "imask";
 
 functions.isWebp();
 
@@ -29,32 +29,28 @@ window.onclick = (e) => {
     menuToggle();
 };
 
-const menuDropBtn = document.querySelector('.header__menu-dropdown-button');
-const menuDropCon = document.querySelector('.header__menu-dropdown-content');
-const menuDropBek = document.querySelector('.header__menu-dropdown-back');
-menuDropBtn.addEventListener('click', e => {
-  menuDropBtn.classList.add('active');
-  menuDropCon.classList.add('active');
-})
-menuDropBek.addEventListener('click', e => {
-  menuDropBtn.classList.remove('active');
-  menuDropCon.classList.remove('active');
-})
+const menuDropBtn = document.querySelector(".header__menu-dropdown-button");
+const menuDropCon = document.querySelector(".header__menu-dropdown-content");
+const menuDropBek = document.querySelector(".header__menu-dropdown-back");
+menuDropBtn.addEventListener("click", (e) => {
+  menuDropBtn.classList.add("active");
+  menuDropCon.classList.add("active");
+});
+menuDropBek.addEventListener("click", (e) => {
+  menuDropBtn.classList.remove("active");
+  menuDropCon.classList.remove("active");
+});
 
-$(document).ready(function() {
-  $(".accordion > .accordion__button").on("click", function() {
+$(document).ready(function () {
+  $(".accordion > .accordion__button").on("click", function () {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
-      $(this)
-        .siblings(".accordion__content")
-        .slideUp(300);
+      $(this).siblings(".accordion__content").slideUp(300);
     } else {
       $(".accordion > .accordion__button").removeClass("active");
       $(this).addClass("active");
       $(".accordion__content").slideUp(300);
-      $(this)
-        .siblings(".accordion__content")
-        .slideDown(300);
+      $(this).siblings(".accordion__content").slideDown(300);
     }
   });
 });
@@ -82,10 +78,10 @@ new Swiper(".advantages__swiper", {
   slidesPerView: 1,
   spaceBetween: 22,
   watchSlidesProgress: true,
-  slideVisibleClass: 'visible',
+  slideVisibleClass: "visible",
   modules: [Pagination],
   pagination: {
-    el: '.advantages__pagination',
+    el: ".advantages__pagination",
     clickable: true,
   },
   breakpoints: {
@@ -100,8 +96,8 @@ new Swiper(".advantages__swiper", {
     },
     768: {
       slidesPerView: 2,
-    }
-  }
+    },
+  },
 });
 
 new Swiper(".clients__swiper", {
@@ -110,74 +106,74 @@ new Swiper(".clients__swiper", {
   modules: [Pagination, Navigation, Grid],
   grid: {
     rows: 2,
-    fill: 'column',
+    fill: "column",
   },
   pagination: {
     el: ".clients__pagination",
     clickable: true,
   },
-  navigation:{
-    nextEl: '.clients__action-next',
-    prevEl: '.clients__action-prev',
+  navigation: {
+    nextEl: ".clients__action-next",
+    prevEl: ".clients__action-prev",
   },
   breakpoints: {
     1900: {
       slidesPerView: 5,
       grid: {
         rows: 1,
-        fill: 'row'
+        fill: "row",
       },
     },
     1400: {
       slidesPerView: 4,
       grid: {
         rows: 1,
-        fill: 'row'
+        fill: "row",
       },
     },
     992: {
       slidesPerView: 3,
       grid: {
         rows: 1,
-        fill: 'row'
+        fill: "row",
       },
     },
-    768: { 
+    768: {
       slidesPerView: 2,
       grid: {
         rows: 1,
-        fill: 'row'
+        fill: "row",
       },
     },
-  }
+  },
 });
 
 new Swiper(".works__swiper", {
   slidesPerView: 1,
   spaceBetween: 22,
   watchSlidesProgress: true,
-  slideVisibleClass: 'visible',
+  slideVisibleClass: "visible",
   modules: [Navigation],
   navigation: {
-    nextEl: '.works__next',
-    prevEl: '.works__prev'
+    nextEl: ".works__next",
+    prevEl: ".works__prev",
   },
   breakpoints: {
     768: {
       slidesPerView: 2,
-    }
-  }
+    },
+  },
 });
 
 new Swiper(".reviews__swiper", {
   slidesPerView: 1,
   spaceBetween: 22,
   watchSlidesProgress: true,
-  slideVisibleClass: 'visible',
+  slideVisibleClass: "visible",
   modules: [Navigation],
   navigation: {
-    nextEl: '.reviews__next',
-    prevEl: '.reviews__prev'
+    nextEl: ".reviews__next",
+    prevEl: ".reviews__prev",
   },
   breakpoints: {
     768: {
@@ -185,8 +181,8 @@ new Swiper(".reviews__swiper", {
     },
     992: {
       slidesPerView: 2,
-    }
-  }
+    },
+  },
 });
 
 const infoSlider = new Swiper(".info__swiper_1", {
@@ -197,8 +193,8 @@ const infoSlider = new Swiper(".info__swiper_1", {
   breakpoints: {
     998: {
       slidesPerView: 5,
-    }
-  }
+    },
+  },
 });
 
 new Swiper(".info__swiper_2", {
@@ -212,69 +208,159 @@ new Swiper(".info__swiper_2", {
   },
 });
 
-if(document.querySelector('.datepicker')){
-  $(".datepicker").datepicker({ 
-    dateFormat: 'dd/mm/yy',
-    minDate: 0, maxDate: "+1M +10D",
-    closeText:"Закрыть",prevText:"&#x3C;Пред",nextText:"След&#x3E;",currentText:"Сегодня",monthNames:["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],monthNamesShort:["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],dayNames:["воскресенье","понедельник","вторник","среда","четверг","пятница","суббота"],dayNamesShort:["вск","пнд","втр","срд","чтв","птн","сбт"],
-    dayNamesMin:["Вс","Пн","Вт","Ср","Чт","Пт","Сб"],
-    monthNames:["Январ","Феврал","Март","Апрел","Май","Июн","Июл","Август","Сентябр","Октябр","Ноябр","Декабр"],
-    monthNamesShort:["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"]
+if (document.querySelector(".datepicker")) {
+  $(".datepicker").datepicker({
+    dateFormat: "dd/mm/yy",
+    minDate: 0,
+    maxDate: "+1M +10D",
+    closeText: "Закрыть",
+    prevText: "&#x3C;Пред",
+    nextText: "След&#x3E;",
+    currentText: "Сегодня",
+    monthNames: [
+      "Январь",
+      "Февраль",
+      "Март",
+      "Апрель",
+      "Май",
+      "Июнь",
+      "Июль",
+      "Август",
+      "Сентябрь",
+      "Октябрь",
+      "Ноябрь",
+      "Декабрь",
+    ],
+    monthNamesShort: [
+      "Янв",
+      "Фев",
+      "Мар",
+      "Апр",
+      "Май",
+      "Июн",
+      "Июл",
+      "Авг",
+      "Сен",
+      "Окт",
+      "Ноя",
+      "Дек",
+    ],
+    dayNames: [
+      "воскресенье",
+      "понедельник",
+      "вторник",
+      "среда",
+      "четверг",
+      "пятница",
+      "суббота",
+    ],
+    dayNamesShort: ["вск", "пнд", "втр", "срд", "чтв", "птн", "сбт"],
+    dayNamesMin: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+    monthNames: [
+      "Январ",
+      "Феврал",
+      "Март",
+      "Апрел",
+      "Май",
+      "Июн",
+      "Июл",
+      "Август",
+      "Сентябр",
+      "Октябр",
+      "Ноябр",
+      "Декабр",
+    ],
+    monthNamesShort: [
+      "Янв",
+      "Фев",
+      "Мар",
+      "Апр",
+      "Май",
+      "Июн",
+      "Июл",
+      "Авг",
+      "Сен",
+      "Окт",
+      "Ноя",
+      "Дек",
+    ],
   });
-  $(".datepicker").change(function(){
-    document.getElementById('alternate').innerHTML = $(".datepicker").val()
+  $(".datepicker").change(function () {
+    document.getElementById("alternate").innerHTML = $(".datepicker").val();
   });
-  document.getElementById('alternate').innerHTML = $(".datepicker").val()
+  document.getElementById("alternate").innerHTML = $(".datepicker").val();
 }
 
-document.querySelectorAll('.bron__content').forEach(el=>{
-  const inputs = el.querySelectorAll('.bron__time input');
-  inputs.forEach(input=>{
-    input.addEventListener('input', bron)
-  })   
-  function bron(){
-    const time = el.querySelector('#time');
-    let checkedInputs = el.querySelectorAll('.bron__time input:checked');
-    checkedInputs = el.querySelectorAll('.bron__time input:checked');
-    time.innerHTML = `${checkedInputs.length} час`
+document.querySelectorAll(".bron__content").forEach((el) => {
+  const inputs = el.querySelectorAll(".bron__time input");
+  inputs.forEach((input) => {
+    input.addEventListener("input", bron);
+  });
+  function bron() {
+    const time = el.querySelector("#time");
+    let checkedInputs = el.querySelectorAll(".bron__time input:checked");
+    checkedInputs = el.querySelectorAll(".bron__time input:checked");
+    time.innerHTML = `${checkedInputs.length} час`;
   }
-})
+});
 
-if(document.querySelector('.how')){
-  const buttons = document.querySelectorAll('.how__sidebar-item');
-  const content = document.querySelectorAll('.how__item');
-  buttons.forEach(button => {
-    button.addEventListener('click', e => {
-      const dataTarget = button.getAttribute('data-target');
+if (document.querySelector(".how")) {
+  const buttons = document.querySelectorAll(".how__sidebar-item");
+  const content = document.querySelectorAll(".how__item");
+  buttons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const dataTarget = button.getAttribute("data-target");
       const target = document.querySelector(`#${dataTarget}`);
-      buttons.forEach(el => {
-        el.classList.remove('active');
-      })
-      content.forEach(el => {
-        el.classList.remove('active');
-      })
-      button.classList.add('active');
-      target.classList.add('active');
-    })
-  })
+      buttons.forEach((el) => {
+        el.classList.remove("active");
+      });
+      content.forEach((el) => {
+        el.classList.remove("active");
+      });
+      button.classList.add("active");
+      target.classList.add("active");
+    });
+  });
 }
 
-var phoneMask = IMask(
-  document.getElementById('tel'), {
-    mask: '+{7}(000)000-00-00'
+if (document.getElementById("tel")) {
+  var phoneMask = IMask(document.getElementById("tel"), {
+    mask: "+{7}(000)000-00-00",
   });
+}
 
-var phoneMask2 = IMask(
-  document.getElementById('tel2'), {
-    mask: '+{7}(000)000-00-00'
+if (document.getElementById("tel2")) {
+  var phoneMask = IMask(document.getElementById("tel2"), {
+    mask: "+{7}(000)000-00-00",
   });
+}
 
-var phoneMask3 = IMask(
-  document.getElementById('tel3'), {
-    mask: '+{7}(000)000-00-00'
+if (document.getElementById("tel3")) {
+  var phoneMask = IMask(document.getElementById("tel3"), {
+    mask: "+{7}(000)000-00-00",
   });
+}
 
-var phoneMask4 = IMask(
-  document.getElementById('tel4'), {
-    mask: '+{7}(000)000-00-00'
+if (document.getElementById("tel4")) {
+  var phoneMask = IMask(document.getElementById("tel4"), {
+    mask: "+{7}(000)000-00-00",
   });
+}
+
+if (document.querySelector(".location__slide")) {
+  const locSlides = document.querySelectorAll(".location__slide");
+  const popup = document.querySelector(".image-review");
+  locSlides.forEach((el) => {
+    el.addEventListener("click", () => {
+      const img = el.querySelector("img");
+      const source = el.querySelector("source");
+      const src = img.getAttribute("src");
+      const srcSet = source.getAttribute("srcset");
+      popup.querySelector("img").setAttribute("src", src);
+      popup.classList.add("active");
+    });
+  });
+  popup.querySelector(".overlay").addEventListener("click", () => {
+    popup.classList.remove("active");
+  });
+}

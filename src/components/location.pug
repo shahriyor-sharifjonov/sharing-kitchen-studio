@@ -1,4 +1,11 @@
+mixin image-review()
+    .image-review 
+        .overlay
+        img(src="@img/location-icon-1.svg" alt="" draggable="false")
+
+
 mixin location()
+    +image-review
     section.section.location
         .location__body.container
             h2.title.location__title Наша студия #[span в центре Москвы]
@@ -7,23 +14,24 @@ mixin location()
                     .location__swiper.location__swiper_1.swiper 
                         .location__swiper-wrapper.swiper-wrapper 
                             .location__slide.swiper-slide 
-                                img(src="@img/location-img-1.png", alt="" draggable="false")
+                                img(src="@img/location-img-1.png" alt="" draggable="false")
                             .location__slide.swiper-slide 
-                                img(src="@img/location-img-1.png", alt="" draggable="false")
+                                img(src="@img/location-img-1.png" alt="" draggable="false")
                             .location__slide.swiper-slide 
-                                img(src="@img/location-img-1.png", alt="" draggable="false")
+                                img(src="@img/location-img-1.png" alt="" draggable="false")
                     .location__buttons 
-                        .location__prev.location__prev_1
-                        .location__next.location__next_1
+                        .location__prev.location__prev_1 
+                        .location__next.location__next_1 
                 .location__content 
                     ul.location__list 
-                        li.location__li #[img(src="@img/location-icon-1.svg", alt="" draggable="false")] Михайловский пр-д, 1 строение 3 м. Крестьянская застава / м. Площадь Ильича
-                        li.location__li #[img(src="@img/location-icon-2.svg", alt="" draggable="false")] Работаем с 10:00 до 20:00
-                        li.location__li #[img(src="@img/location-icon-3.svg", alt="" draggable="false")] Площадь 60 м2
-                        li.location__li #[img(src="@img/location-icon-4.svg", alt="" draggable="false")] Несколько зон для съемки разных форматов food-контента
+                        li.location__li #[img(src="@img/location-icon-1.svg" alt="" draggable="false")] Михайловский пр-д, 1 строение 3 м. Крестьянская застава / м. Площадь Ильича
+                        li.location__li #[img(src="@img/location-icon-2.svg" alt="" draggable="false")] Работаем с 10:00 до 20:00
+                        li.location__li #[img(src="@img/location-icon-3.svg" alt="" draggable="false")] Площадь 60 м2
+                        li.location__li #[img(src="@img/location-icon-4.svg" alt="" draggable="false")] Несколько зон для съемки разных форматов food-контента
                     a(href="#!").location__btn.btn Подробнее 
-                    
+
 mixin location-2()
+    +image-review
     section.section.location
         .location__body.container
             .location__row.fdcr 
@@ -39,15 +47,16 @@ mixin location-2()
                     .location__swiper.location__swiper_2.swiper 
                         .location__swiper-wrapper.swiper-wrapper 
                             .location__slide.swiper-slide 
-                                img(src="@img/location-img-1.png", alt="" draggable="false")
+                                img(src="@img/location-img-1.png" alt="" draggable="false")
                             .location__slide.swiper-slide 
-                                img(src="@img/location-img-1.png", alt="" draggable="false")
+                                img(src="@img/location-img-1.png" alt="" draggable="false")
                             .location__slide.swiper-slide 
-                                img(src="@img/location-img-1.png", alt="" draggable="false")
+                                img(src="@img/location-img-1.png" alt="" draggable="false")
                     .location__buttons 
                         .location__prev.location__prev_2 
                         .location__next.location__next_2
 mixin location-3()
+    +image-review
     section.section.location.bg 
         .location__body.container
             .location__row 
@@ -55,11 +64,11 @@ mixin location-3()
                     .location__swiper.location__swiper_1.swiper 
                         .location__swiper-wrapper.swiper-wrapper 
                             .location__slide.swiper-slide 
-                                img(src="@img/location-img-1.png", alt="" draggable="false")
+                                img(src="@img/location-img-1.png" alt="" draggable="false")
                             .location__slide.swiper-slide 
-                                img(src="@img/location-img-1.png", alt="" draggable="false")
+                                img(src="@img/location-img-1.png" alt="" draggable="false")
                             .location__slide.swiper-slide 
-                                img(src="@img/location-img-1.png", alt="" draggable="false")
+                                img(src="@img/location-img-1.png" alt="" draggable="false")
                     .location__buttons 
                         .location__prev.location__prev_1 
                         .location__next.location__next_1
